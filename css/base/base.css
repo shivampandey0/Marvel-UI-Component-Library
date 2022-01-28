@@ -1,24 +1,21 @@
 @import "reset.css";
 
 /* global variables */
-:root{
-    --primary-color: #E40C0B;
-	--primary-color-light: #E15C54;
-	--primary-color-dark: #8F0202;
+:root {
+  --primary-color: hsl(0, 91%, 47%);
+  --primary-color-light: hsl(3, 70%, 61%);
+  --primary-color-dark: hsl(0, 97%, 28%);
 
-    --bg-color:#DDE3E3;
+  --bg-color: hsl(180, 10%, 88%);
 
-	--text-white: white;
-	--text-black: #140606;
+  --text-white: hsl(0, 0%, 100%);
+  --text-black: #hsl(0, 54%, 5%);
 
-	--color-grey: #4B82AE;
-	--color-dark-grey: #354858;
-
-	--avatar-placeholder: 'http://placeholder.pics/svg/300/C7C7C7/757575-C2C2C2';
+  --grey: hsl(207, 21%, 48%);
+  --dark-grey: hsl(207, 25%, 28%);
 }
 
-html{
-    scroll-behavior: smooth;
-    color: var(--text-color-black);
+html {
+  scroll-behavior: smooth;
+  color: var(--text-black);
 }
-
