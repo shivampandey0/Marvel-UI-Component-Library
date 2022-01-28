@@ -1,0 +1,20 @@
+@import "reset.css";
+
+/* global variables */
+:root{
+    --primary-color: #E40C0B;
+	--primary-color-light: #E15C54;
+	--primary-color-dark: #8F0202;
+
+    --bg-color:#DDE3E3;
+
+	--text-color-white: white;
+	--text-color-black: #140606;
+	--text-color-grey: #4B82AE;
+	--text-color-dark-grey: #354858;
+}
+
+html{
+    scroll-behavior: smooth;
+    color: var(--text-color-black);
+}
