@@ -8,13 +8,17 @@
 
     --bg-color:#DDE3E3;
 
-	--text-color-white: white;
-	--text-color-black: #140606;
-	--text-color-grey: #4B82AE;
-	--text-color-dark-grey: #354858;
+	--text-white: white;
+	--text-black: #140606;
+
+	--color-grey: #4B82AE;
+	--color-dark-grey: #354858;
+
+	--avatar-placeholder: 'http://placeholder.pics/svg/300/C7C7C7/757575-C2C2C2';
 }
 
 html{
     scroll-behavior: smooth;
     color: var(--text-color-black);
 }
+
