@@ -13,6 +13,12 @@
 
   --grey: hsl(207, 21%, 48%);
   --dark-grey: hsl(207, 25%, 28%);
+
+  --alert-primary: 	hsl(239, 84%, 67%);
+  --alert-secondary: hsl(0, 8%, 60%);
+  --alert-success: hsl(153, 53%, 53%);
+  --alert-danger: hsl(348, 86%, 61%);
+  --alert-warning: hsl(44, 100%, 77%);
 }
 
 html {

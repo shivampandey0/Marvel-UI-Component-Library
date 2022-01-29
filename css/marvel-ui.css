@@ -2,4 +2,5 @@
 
 @import "./base/base.css";
 @import "./helpers/helpers.css";
+@import "./layout/layout.css";
 @import "./components/components.css";
