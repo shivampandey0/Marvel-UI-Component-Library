@@ -58,11 +58,10 @@
   z-index: 2;
 }
 
-
-.btn-close:hover{
-    opacity: 1;
+.btn-close:hover {
+  opacity: 1;
 }
 
-.btn-close:focus{
-    box-shadow: 0 0 0 2px var(--text-black);
+.btn-close:focus {
+  box-shadow: 0 0 0 2px var(--text-black);
 }
