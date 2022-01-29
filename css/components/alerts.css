@@ -19,15 +19,15 @@
 }
 
 .alert-success {
-  background-color: var(--alert-success);
+  background-color: var(--success);
 }
 
 .alert-danger {
-  background-color: var(--alert-danger);
+  background-color: var(--danger);
 }
 
 .alert-warning {
-  background-color: var(--alert-warning);
+  background-color: var(--warning);
   color: var(--text-black);
 }
 
@@ -42,7 +42,8 @@
 }
 
 .btn-close {
-  background: transparent url("../assets/close.svg") no-repeat center/80%;
+  /* A single image, centered and scaled  */
+  background: url("../assets/close.svg") no-repeat center/80%;
   width: 1.5rem;
   height: 1.5rem;
   border: none;

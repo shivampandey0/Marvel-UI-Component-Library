@@ -16,9 +16,9 @@
 
   --alert-primary: 	hsl(239, 84%, 67%);
   --alert-secondary: hsl(0, 8%, 60%);
-  --alert-success: hsl(153, 53%, 53%);
-  --alert-danger: hsl(348, 86%, 61%);
-  --alert-warning: hsl(44, 100%, 77%);
+  --success: hsl(153, 53%, 53%);
+  --danger: hsl(348, 86%, 61%);
+  --warning: hsl(44, 100%, 77%);
 }
 
 html {
