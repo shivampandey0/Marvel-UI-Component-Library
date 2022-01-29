@@ -1,0 +1,68 @@
+.alert {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  text-align: start;
+  width: 100%;
+  font-size: 1rem;
+  opacity: 0.9;
+  color: var(--text-white);
+}
+
+.alert-primary {
+  background-color: var(--alert-primary);
+}
+
+.alert-secondary {
+  background-color: var(--alert-secondary);
+}
+
+.alert-success {
+  background-color: var(--success);
+}
+
+.alert-danger {
+  background-color: var(--danger);
+}
+
+.alert-warning {
+  background-color: var(--warning);
+  color: var(--text-black);
+}
+
+.alert-link {
+  color: inherit;
+  font-weight: bold;
+}
+
+.alert-icon {
+  margin-right: 8px;
+  font-size: inherit;
+}
+
+.btn-close {
+  /* A single image, centered and scaled  */
+  background: url("../assets/close.svg") no-repeat center/80%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  outline: none;
+  opacity: 0.5;
+  cursor: pointer;
+  margin: 0.75rem;
+  padding: 8px;
+  z-index: 2;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+.btn-close:focus {
+  box-shadow: 0 0 0 2px var(--text-black);
+}

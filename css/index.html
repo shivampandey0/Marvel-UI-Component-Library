@@ -5,14 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/marvel-ui.css">
+    <link rel="stylesheet" href="./marvel-ui.css">
     <title>Components</title>
-
 </head>
 
 <body>
 
     <main>
+        <section class="container">
+            <h2 class="title">Alerts</h2>
+            <div class="flex-column">
+                <div class="alert alert-primary" role="alert">This is a Primary Alert with <a class="alert-link"
+                        href="#">an example
+                        link</a></div>
+                <div class="alert alert-secondary" role="alert">This is a Secondary Alert</div>
+
+                <div class="alert alert-success" role="alert"><span class="alert-icon"><i class="fas fa-check-circle"
+                            aria-hidden="true"></i></span>This is a Success Alert</div>
+
+                <div class="alert alert-danger" role="alert"><span class="alert-icon"><i
+                            class="fas fa-exclamation-triangle" aria-hidden="true"></i></span>This is a Danger Alert
+                </div>
+                <div class="alert alert-warning" role="alert"><span class="alert-icon"><i
+                            class="fas fa-exclamation-circle" aria-hidden="true"></i></span>This is a Warning Alert
+                </div>
+
+                <div class="alert alert-danger" role="alert"><span class="alert-icon"><i
+                            class="fas fa-exclamation-triangle" aria-hidden="true"></i></span>This is a Danger Alert
+                    <button type="button" class="btn-close"></button>
+                </div>
+            </div>
+        </section>
+
         <section class="container">
             <h2 class="title">Avatars</h2>
             <!-- Image Avatar -->
@@ -21,7 +45,6 @@
                 <img class="avatar avatar-md" src="http://placeholder.pics/svg/200/C7C7C7/757575-C7C7C7" alt="avatar">
                 <img class="avatar avatar-sm" src="http://placeholder.pics/svg/200/C7C7C7/757575-C7C7C7" alt="avatar">
                 <img class="avatar avatar-xs" src="http://placeholder.pics/svg/200/C7C7C7/757575-C7C7C7" alt="avatar">
-
             </div>
 
             <!-- Text Avatar -->
@@ -30,7 +53,6 @@
                 <span class="avatar avatar-md avatar-text">M</span>
                 <span class="avatar avatar-sm avatar-text">M</span>
                 <span class="avatar avatar-xs avatar-text">M</span>
-
             </div>
         </section>
     </main>
