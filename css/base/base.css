@@ -1,0 +1,21 @@
+@import "reset.css";
+
+/* global variables */
+:root {
+  --primary-color: hsl(0, 91%, 47%);
+  --primary-color-light: hsl(3, 70%, 61%);
+  --primary-color-dark: hsl(0, 97%, 28%);
+
+  --bg-color: hsl(180, 10%, 88%);
+
+  --text-white: hsl(0, 0%, 100%);
+  --text-black: #hsl(0, 54%, 5%);
+
+  --grey: hsl(207, 21%, 48%);
+  --dark-grey: hsl(207, 25%, 28%);
+}
+
+html {
+  scroll-behavior: smooth;
+  color: var(--text-black);
+}

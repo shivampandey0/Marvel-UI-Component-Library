@@ -1,0 +1,20 @@
+.container {
+  border: 2px solid var(--color-dark-grey);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  margin: 1rem;
+  background-color: var(--bg-color);
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-dark-grey);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

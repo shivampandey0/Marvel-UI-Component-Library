@@ -1,4 +1,3 @@
-
 /* Blocks */
 html,
 body,
@@ -12,9 +11,9 @@ h2,
 h3,
 h4,
 h5,
-h6{
-    margin: 0;
-    padding: 0;
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 /* Heading */
@@ -23,39 +22,38 @@ h2,
 h3,
 h4,
 h5,
-h6{
-    font-size: 100%;
-    font-weight: normal;
+h6 {
+  font-size: 100%;
+  font-weight: normal;
 }
 
 /* Form */
 button,
 input,
 select,
-textarea{
-    margin: 0;
+textarea {
+  margin: 0;
 }
 
 /* List */
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 /* Box sizing */
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 
 *,
 *::before,
-*::after{
-    box-sizing: inherit;
+*::after {
+  box-sizing: inherit;
 }
 
 /* Media */
 img,
-video{
-    height: auto;
-    max-width: 100%;
+video {
+  height: auto;
+  max-width: 100%;
 }
-
