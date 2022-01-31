@@ -43,6 +43,8 @@ ul {
 /* Box sizing */
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 *,
@@ -57,3 +59,4 @@ video {
   height: auto;
   max-width: 100%;
 }
+

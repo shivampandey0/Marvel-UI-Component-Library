@@ -2,11 +2,11 @@
 
 /* global variables */
 :root {
-  --primary-color: hsl(0, 91%, 47%);
-  --primary-color-light: hsl(3, 70%, 61%);
-  --primary-color-dark: hsl(0, 97%, 28%);
+  --primary: hsl(0, 91%, 47%);
+  --primary-light: hsl(3, 70%, 61%);
+  --primary-dark: hsl(0, 97%, 28%);
 
-  --bg-color: hsl(180, 10%, 88%);
+  --bg: hsl(180, 10%, 88%);
 
   --text-white: hsl(0, 0%, 100%);
   --text-black: #hsl(0, 54%, 5%);
@@ -14,11 +14,13 @@
   --grey: hsl(207, 21%, 48%);
   --dark-grey: hsl(207, 25%, 28%);
 
-  --alert-primary: 	hsl(239, 84%, 67%);
+  --alert-primary: hsl(239, 84%, 67%);
   --alert-secondary: hsl(0, 8%, 60%);
   --success: hsl(153, 53%, 53%);
   --danger: hsl(348, 86%, 61%);
   --warning: hsl(44, 100%, 77%);
+
+  
 }
 
 html {
