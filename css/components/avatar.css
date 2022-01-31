@@ -1,13 +1,14 @@
 .avatar {
   border-radius: 50%;
   margin: 0.5rem;
+  border: 2px solid white;
 }
 
 .avatar-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   color: var(--text-white);
 }
 

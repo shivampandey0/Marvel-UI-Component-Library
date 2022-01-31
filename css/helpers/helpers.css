@@ -3,7 +3,7 @@
   padding: 1rem;
   border-radius: 6px;
   margin: 1rem;
-  background-color: var(--bg-color);
+  background-color: var(--bg);
 }
 
 .title {
