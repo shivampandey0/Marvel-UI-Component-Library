@@ -1,0 +1,68 @@
+.badge-wrapper {
+  position: relative;
+  margin: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.badge {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  border: 2px solid var(--text-white);
+}
+
+.badge-info {
+  width: fit-content;
+  height: fit-content;
+
+  top: -10px;
+  right: -1rem;
+
+  padding: 2px 8px;
+  border: none;
+  background-color: var(--primary);
+  color: var(--text-white);
+}
+
+/* Status badges */
+
+.online {
+  background-color: var(--success);
+}
+
+.offline {
+  background-color: var(--grey);
+}
+
+.away {
+  background-color: var(--warning);
+}
+
+.dnd {
+  background-color: var(--danger);
+}
+
+/* Avatar Badges positioning */
+.badge-wrapper .avatar-lg ~ .badge {
+  right: 0.75rem;
+  bottom: 2rem;
+}
+
+.badge-wrapper .avatar-md ~ .badge {
+  right: 0.8rem;
+  bottom: 1.2rem;
+}
+
+.badge-wrapper .avatar-sm ~ .badge {
+  right: 6px;
+  bottom: 1.2rem;
+}
+
+.badge-wrapper .avatar-xs ~ .badge {
+  right: 6px;
+  bottom: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
+}
