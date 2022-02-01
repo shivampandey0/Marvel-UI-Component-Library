@@ -4,10 +4,8 @@
   background-color: var(--text-white);
   border: 1px solid transparent;
   color: var(--text-black);
-
   cursor: pointer;
   padding: 0.5rem 1rem;
-  opacity: 0.8;
 
   font-size: 1rem;
   text-align: center;
@@ -21,23 +19,34 @@
 }
 
 .btn:hover {
-  opacity: 1;
+  border-color: var(--grey);
 }
 
 /* Primary Button */
 
 .btn-primary {
   background-color: var(--primary);
+  border-color: var(--primary);
   color: var(--text-white);
-  border: none;
+}
+
+.btn-primary:hover,
+.btn-fab:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
 
 /* Secondary Button */
 
 .btn-secondary {
-  background-color: var(--grey);
+  background-color: var(--grey-light);
+  border-color: var(--grey-light);
   color: var(--text-white);
-  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: var(--grey);
+  border-color: var(--grey);
 }
 
 /* Outline Button */
@@ -58,9 +67,15 @@
 
 .btn-link {
   background-color: var(--alert-primary);
+  border-color: var(--alert-primary);
   color: var(--text-white);
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.btn-link:hover {
   text-decoration: underline;
-  border:none;
+  opacity: 1;
 }
 
 /* icon button */
@@ -73,7 +88,7 @@
 
 .btn-fab {
   background-color: var(--primary);
-  color: var(--text-white);  
+  color: var(--text-white);
   border-radius: 100%;
   font-size: 1.2rem;
   width: 3rem;
@@ -83,6 +98,6 @@
 
 /* full width button */
 
-.btn-full{
-    width: 100%;
+.btn-full {
+  width: 100%;
 }
