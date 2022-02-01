@@ -1,0 +1,102 @@
+/* Base Button */
+
+.btn {
+  background-color: var(--text-white);
+  border: 1px solid transparent;
+  color: var(--text-black);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+
+  font-size: 1rem;
+  white-space: nowrap;
+
+  /* flex-properties */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn:hover {
+  border-color: var(--grey);
+}
+
+/* Primary Button */
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--text-white);
+}
+
+.btn-primary:hover,
+.btn-fab:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Secondary Button */
+
+.btn-secondary {
+  background-color: var(--grey-light);
+  border-color: var(--grey-light);
+  color: var(--text-white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--grey);
+  border-color: var(--grey);
+}
+
+/* Outline Button */
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--text-white);
+}
+
+/* Link Button */
+
+.btn-link {
+  background-color: var(--alert-primary);
+  border-color: var(--alert-primary);
+  color: var(--text-white);
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/* icon button */
+
+.btn > .icon {
+  font-size: inherit;
+}
+
+/* Floating Action Button */
+
+.btn-fab {
+  background-color: var(--primary);
+  color: var(--text-white);
+  border-radius: 100%;
+  font-size: 1.2rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+}
+
+/* full width button */
+
+.btn-full {
+  width: 100%;
+}
