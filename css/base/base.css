@@ -22,6 +22,8 @@
   --warning: hsl(44, 100%, 77%);
 
   --link: hsl(239, 84%, 67%);
+
+  --radius-round: 50%;
 }
 
 html {

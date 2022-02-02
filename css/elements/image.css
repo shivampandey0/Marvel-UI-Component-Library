@@ -4,6 +4,6 @@
 }
 
 .img-rounded{
-    border-radius: 50%;
+    border-radius: var(--radius-round);
     object-fit: cover;
 }

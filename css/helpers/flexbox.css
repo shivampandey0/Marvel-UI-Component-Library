@@ -8,11 +8,11 @@
   flex-direction: column;
 }
 
-.is-wrap {
+.flex-wrap {
   flex-wrap: wrap;
 }
 
-.is-center{
+.flex-center{
   justify-content: center;
   align-items: center;
 }
