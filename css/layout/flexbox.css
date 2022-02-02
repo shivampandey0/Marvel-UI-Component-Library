@@ -8,8 +8,13 @@
   flex-direction: column;
 }
 
-.flex-wrap {
+.is-wrap {
   flex-wrap: wrap;
+}
+
+.is-center{
+  justify-content: center;
+  align-items: center;
 }
 
 /* flex gaps */
