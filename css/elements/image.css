@@ -1,0 +1,9 @@
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+.img-rounded{
+    border-radius: 50%;
+    object-fit: cover;
+}
