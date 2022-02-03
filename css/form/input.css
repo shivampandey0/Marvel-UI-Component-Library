@@ -47,8 +47,8 @@ Below, When Field is
 - has valid data entered
 */
 
-input:required:valid,
-textarea:required:valid {
+.input:required:valid,
+.textarea:required:valid {
   border-color: var(--success);
 }
 
@@ -60,7 +60,7 @@ Below, When Field is
 - Placeholder is not shown i.e. something is written in field
 */
 
-input:required:invalid:not(:focus):not(:placeholder-shown),
-textarea:required:invalid:not(:focus):not(:placeholder-shown) {
+.input:required:invalid:not(:focus):not(:placeholder-shown),
+.textarea:required:invalid:not(:focus):not(:placeholder-shown) {
   border-color: var(--danger);
 }
