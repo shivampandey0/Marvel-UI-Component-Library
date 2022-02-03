@@ -1,3 +1,5 @@
+@import "flexbox.css";
+
 .container {
   border: 2px solid var(--dark-grey);
   padding: 1rem;
@@ -11,11 +13,12 @@
   color: var(--color-dark-grey);
 }
 
+/* temporary class for developement use, can be deleted or restructured in future */
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 

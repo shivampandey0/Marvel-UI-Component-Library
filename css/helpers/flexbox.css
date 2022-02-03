@@ -12,6 +12,11 @@
   flex-wrap: wrap;
 }
 
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+
 /* flex gaps */
 .gap-1 {
   gap: 1rem;

@@ -1,5 +1,5 @@
 .avatar {
-  border-radius: 50%;
+  border-radius: var(--radius-round);
   margin: 0.5rem;
   border: 2px solid white;
 }
