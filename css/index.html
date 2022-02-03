@@ -14,6 +14,39 @@
     <main>
 
         <section class="container">
+            <h2 class="title">Form > Inputs</h2>
+            <div class="container">
+                <form class="center" action="#">
+                    <div class="input-group">
+                        <label class="required" for="name">Full Name</label>
+                        <input id="name" class="input" type="text" aria-label="text-input" placeholder="John Smith"
+                            required="">
+                    </div>
+                    <div class="input-group">
+                        <label class="required" for="name">Email</label>
+                        <input class="input" type="email" aria-label="text-input" placeholder="John@example.com"
+                            required>
+                    </div>
+                    <div class="input-group">
+                        <label for="name">Phone</label>
+                        <input class="input" type="text" aria-label="text-input" placeholder="+91 1234 567 890"
+                            pattern="^(\+91)?\s?[1-9][0-9]{9}$" required>
+                    </div>
+                    <div class="input-group">
+                        <label class="required" for="name">Address</label>
+                        <textarea class="input textarea" placeholder="Enter Address..." required></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="name">Comments</label>
+                        <textarea class="input textarea" placeholder="Comments..."></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="container">
             <h2 class="title">Buttons</h2>
 
             <div class="center">
