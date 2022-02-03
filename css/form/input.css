@@ -1,0 +1,66 @@
+.input-group {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+/* All the label inside input-group */
+.input-group > label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+/* All the child elements of input-group who have class "required" */
+.input-group > .required::after {
+  content: "*";
+  color: var(--danger);
+}
+
+.input {
+  border: 2px solid var(--border-grey);
+  max-width: 100%;
+  width: 100%;
+  line-height: 1.5;
+  position: relative;
+  height: 2rem;
+  font-size: 1rem;
+  border-radius: var(--rounded-border);
+  padding: 4px 8px;
+}
+
+.input:hover {
+  border-color: var(--grey);
+}
+
+.input:focus-visible {
+  outline-color: var(--primary);
+}
+
+.textarea {
+  min-height: 4rem;
+  font-size: 0.8rem;
+}
+
+/*
+Below, When Field is
+- required 
+- has valid data entered
+*/
+
+.input:required:valid,
+.textarea:required:valid {
+  border-color: var(--success);
+}
+
+/*
+Below, When Field is
+- required 
+- invalid
+- Not in Focus
+- Placeholder is not shown i.e. something is written in field
+*/
+
+.input:required:invalid:not(:focus):not(:placeholder-shown),
+.textarea:required:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: var(--danger);
+}

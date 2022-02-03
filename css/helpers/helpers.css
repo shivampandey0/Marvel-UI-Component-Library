@@ -1,11 +1,10 @@
 @import "flexbox.css";
 
 .container {
-  border: 2px solid var(--color-dark-grey);
+  border: 2px solid var(--dark-grey);
   padding: 1rem;
   border-radius: 6px;
   margin: 1rem;
-  background-color: var(--bg);
 }
 
 .title {
@@ -22,3 +21,4 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+
