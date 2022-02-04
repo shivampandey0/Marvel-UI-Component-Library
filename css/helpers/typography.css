@@ -1,0 +1,44 @@
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  line-height: 1.33;
+  font-weight: var(--weight-regular);
+}
+
+.h1,
+h1 {
+  font-size: var(--size-6);
+}
+
+.h2,
+h2 {
+  font-size: var(--size-4);
+}
+
+.h3,
+h3 {
+  font-size: var(--size-2);
+}
+
+.h4,
+h4 {
+  font-size: var(--size-0);
+}
+
+.h5,
+h5 {
+  font-size: var(--size-000);
+}
+
+/* Text */

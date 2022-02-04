@@ -2,31 +2,44 @@
 
 /* global variables */
 :root {
-  --primary: #4747C7;
-  --primary-light: #5b5bd6;
-  --primary-dark: #3e3eb1;
-
-  --bg: hsl(0, 0%, 93%);
-
-  --text-white: hsl(0, 0%, 100%);
-  --text-black: hsl(0, 54%, 5%);
-
-  --grey: hsl(207, 21%, 48%);
-  --grey-light: hsl(202, 4%, 62%);
-  --dark-grey: hsl(207, 25%, 28%);
-  --border-grey: #dbdbdb;
-
-  --alert-primary: hsl(239, 84%, 67%);
-  --alert-secondary: hsl(0, 8%, 60%);
-  --success: hsl(153, 53%, 53%);
-  --danger: hsl(348, 86%, 61%);
-  --warning: hsl(44, 100%, 77%);
-
-  --link: hsl(239, 84%, 67%);
-
-  --rounded-border: 4px;
-
+  /* Radius variables */
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
   --radius-round: 50%;
+
+  /* font-weights */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-black: 900;
+
+  /* sizes */
+  --size-000: 0.5rem;
+  --size-00: 0.75rem;
+  --size-0: 1rem;
+  --size-1: 1.25rem;
+  --size-2: 1.5rem;
+  --size-3: 1.75rem;
+  --size-4: 2rem;
+  --size-5: 2.5rem;
+  --size-6: 3rem;
+  --size-7: 4rem;
+  --size-8: 8rem;
+  --size-9: 16rem;
+  --size-10: 24rem;
+
+  /* Z-indexes */
+  --z-below: -1;
+  --z-1: 1;
+  --z-2: 2;
+  --z-3: 3;
+  --z-4: 4;
+  --z-5: 5;
+  --z-top: 9999;
 }
 
 html {
