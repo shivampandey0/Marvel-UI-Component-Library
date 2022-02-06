@@ -10,8 +10,170 @@
 </head>
 
 <body>
-
     <main>
+
+        <section class="container">
+            <h2 class="title">Typography</h2>
+
+            <div class="container">
+
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+            </div>
+
+            <div class="container">
+                <p class="txt-xl">It's a X-Large Paragraph</p>
+                <p class="txt-lg">It's a Large Paragraph</p>
+                <p class="txt-md">It's a Medium Paragraph</p>
+                <p>It's a normal Paragraph</p>
+                <p class="txt-sm">It's a Small Paragraph</p>
+                <p class="txt-xs">It's a X-Small Paragraph</p>
+            </div>
+
+            <div class="container">
+                <p class="txt-primary">It's a Primary Text</p>
+                <p class="txt-grey">It's a Grey Text</p>
+                <p class="txt-underline">It's Underline Text</p>
+                <p class="txt-striked">It's Striked Text</p>
+            </div>
+
+            <div class="container">
+                <p class="txt-start">Text aligned start</p>
+                <p class="txt-center">Text aligned start</p>
+                <p class="txt-end">Text aligned end</p>
+
+            </div>
+
+        </section>
+
+        <section class="container">
+            <h2 class="title">Cards</h2>
+            <div class=" flex-row gap-05 flex-wrap">
+
+                <!-- Text only card -->
+                <div class="card card-elevation">
+                    <div class="card-body">
+                        <h3 class="card-title txt-bold">Ironman</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat
+                            distinctio exercitationem magnam doloribus! Dolorum delectus atque quas explicabo voluptatem
+                            soluta aliquam! Facilis officiis necessitatibus totam laudantium similique esse dolor.</p>
+                    </div>
+                    <span class="badge badge-info card-badge top-right">New</span>
+
+                </div>
+
+                <!-- Vertical Card with badge and dismiss -->
+
+                <div class="card">
+                    <figure class="card-image">
+                        <img class="img-responsive" src="./assets/nike.jpeg" alt="nike">
+                    </figure>
+
+                    <div class="card-body">
+                        <h3 class="card-title txt-semibold">Nike Red</h3>
+                        <small class="card-subtitle txt-grey">Shoes</small>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae
+                            itaque
+                            eligendi commodi nesciunt aspernatur?</p>
+                    </div>
+
+                    <div class="card-price">
+                        <span class="h3 txt-bold">$399.00</span>
+                        <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+                    </div>
+
+
+                    <div class="card-buttons flex-column gap-05 ">
+                        <button class="btn btn-primary">Add to cart</button>
+                        <button class="btn btn-outline">Buy Now</button>
+                    </div>
+
+                    <div class="card-icons top-right">
+                        <button><i class="fas fa-close icon"></i></button>
+                    </div>
+
+                    <span class="badge badge-info card-badge top-left">New</span>
+                </div>
+
+                <!-- Horizontal Card -->
+
+                <div class="card card-h">
+                    <figure class="card-image">
+                        <img class="img-responsive" src="./assets/nike-transparent.png" alt="nike">
+                    </figure>
+
+                    <div class="card-body">
+                        <div class="card-content">
+                            <h3 class="card-title txt-semibold">Nike Red</h3>
+                            <small class="card-subtitle txt-grey">Shoes</small>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae
+                                itaque
+                                eligendi commodi nesciunt aspernatur?</p>
+                        </div>
+                        <div class="card-price">
+                            <span class="h3 txt-bold">$399.00</span>
+                            <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="btn btn-primary btn-full">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card-icons top-right">
+                        <button><i class="fas fa-close icon"></i></button>
+                    </div>
+
+                </div>
+
+                <!-- Overlay -->
+                <div class="card">
+                    <div class="card-overlay">
+                        <figure class="card-image">
+                            <img class="img-responsive" src="./assets/nike.jpeg" alt="nike">
+                        </figure>
+
+                        <div class="card-body">
+                            <h3 class="card-title txt-semibold">Nike Red</h3>
+                            <small class="card-subtitle txt-grey">Shoes</small>
+                        </div>
+
+                        <div class="card-content">
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae
+                                itaque
+                                eligendi commodi nesciunt aspernatur?</p>
+                        </div>
+
+                        <div class="card-price">
+                            <span class="h3 txt-bold">$399.00</span>
+                            <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+                        </div>
+
+
+                        <div class="card-buttons flex-column gap-05 ">
+                            <button class="btn btn-primary">Add to cart</button>
+                            <button class="btn btn-outline">Buy Now</button>
+                        </div>
+
+                        <div class="card-icons top-right">
+                            <button><i class="fas fa-close icon"></i></button>
+                        </div>
+
+                        <span class="badge badge-info card-badge top-left">New</span>
+                    </div>
+
+                    <div class="overlay-text">Out of Stock</div>
+
+                </div>
+            </div>
+        </section>
 
         <section class="container">
             <h2 class="title">Form > Inputs</h2>
@@ -47,7 +209,6 @@
         </section>
 
         <section class="container">
-            <h2 class="title">Buttons</h2>
             <h2 class="title">Images</h2>
             <div class="flex-row gap-1">
                 <div>
@@ -65,25 +226,25 @@
             </div>
             <div class="flex-row flex-center gap-1">
                 <div>
-                    <img class="img-rounded img-responsive" src="https://picsum.photos/200" alt="Nike">
+                    <img class="img-rounded img-responsive" src="https://i.pravatar.cc/300" alt="Nike">
                 </div>
                 <div>
-                    <img class="img-rounded img-responsive" src="https://picsum.photos/200" alt="Nike">
+                    <img class="img-rounded img-responsive" src="https://i.pravatar.cc/300" alt="Nike">
                 </div>
                 <div>
-                    <img class="img-rounded img-responsive" src="https://picsum.photos/200" alt="Nike">
+                    <img class="img-rounded img-responsive" src="https://i.pravatar.cc/300" alt="Nike">
                 </div>
                 <div>
-                    <img class="img-rounded img-responsive" src="https://picsum.photos/200" alt="Nike">
+                    <img class="img-rounded img-responsive" src="https://i.pravatar.cc/300" alt="Nike">
                 </div>
                 <div>
-                    <img class="img-rounded img-responsive" src="https://picsum.photos/200" alt="Nike">
+                    <img class="img-rounded img-responsive" src="https://i.pravatar.cc/300" alt="Nike">
                 </div>
                 <div>
-                    <img class="img-rounded img-responsive" src="https://picsum.photos/200" alt="Nike">
+                    <img class="img-rounded img-responsive" src="https://i.pravatar.cc/300" alt="Nike">
                 </div>
 
-                </div>
+            </div>
         </section>
 
         <section class="container">
@@ -104,21 +265,23 @@
             <!-- Badge on Avatar -->
             <div class="center">
                 <div class="badge-wrapper">
-                    <img class="avatar avatar-lg" src="https://picsum.photos/200" alt="avatar">
+                    <img class="avatar avatar-lg" src="https://i.pravatar.cc/300" alt="avatar">
                     <span class="badge online"></span>
                 </div>
                 <div class="badge-wrapper">
-                    <img class="avatar avatar-md" src="https://picsum.photos/200" alt="avatar">
+                    <img class="avatar avatar-md" src="https://i.pravatar.cc/300" alt="avatar">
                     <span class="badge away"></span>
                 </div>
                 <div class="badge-wrapper">
-                    <img class="avatar avatar-sm" src="https://picsum.photos/200" alt="avatar">
+                    <img class="avatar avatar-sm" src="https://i.pravatar.cc/300" alt="avatar">
                     <span class="badge dnd"></span>
                 </div>
                 <div class="badge-wrapper">
-                    <img class="avatar avatar-xs" src="https://picsum.photos/200" alt="avatar">
+                    <img class="avatar avatar-xs" src="https://i.pravatar.cc/300" alt="avatar">
                     <span class="badge offline"></span>
                 </div>
+
+
 
             </div>
 
@@ -167,10 +330,10 @@
             <h2 class="title">Avatars</h2>
             <!-- Image Avatar -->
             <div class="center">
-                <img class="avatar avatar-lg" src="https://picsum.photos/200" alt="avatar">
-                <img class="avatar avatar-md" src="https://picsum.photos/200" alt="avatar">
-                <img class="avatar avatar-sm" src="https://picsum.photos/200" alt="avatar">
-                <img class="avatar avatar-xs" src="https://picsum.photos/200" alt="avatar">
+                <img class="avatar avatar-lg" src="https://i.pravatar.cc/300" alt="avatar">
+                <img class="avatar avatar-md" src="https://i.pravatar.cc/300" alt="avatar">
+                <img class="avatar avatar-sm" src="https://i.pravatar.cc/300" alt="avatar">
+                <img class="avatar avatar-xs" src="https://i.pravatar.cc/300" alt="avatar">
             </div>
             <!-- Text Avatar -->
             <div class="center">
