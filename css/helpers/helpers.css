@@ -1,4 +1,6 @@
+@import "colors.css";
 @import "flexbox.css";
+@import "typography.css";
 
 .container {
   border: 2px solid var(--dark-grey);
