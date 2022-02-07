@@ -1,0 +1,89 @@
+@import "../../css/marvel-ui.css";
+
+* {
+  /* outline: 1px solid red; */
+}
+
+.header {
+  width: 100%;
+  top: 0;
+  z-index: var(--z-5);
+  background-color: var(--text-white);
+}
+
+.navbar {
+  padding: var(--size-0);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: var(--color-black);
+  white-space: nowrap;
+}
+
+.landing-container {
+  max-width: 1200px;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.intro {
+  padding: 0 var(--size-8);
+}
+
+.footer {
+  height: 2rem;
+  background-color: grey;
+}
+
+.active {
+  border-bottom: 2px solid var(--color-red-500);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+}
+
+.btn:hover {
+  border-color: transparent;
+  border-bottom: 2px solid var(--color-red-500);
+}
+
+/* Drawer */
+
+.doc-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: var(--size-0);
+}
+
+.drawer {
+  width: 20%;
+  padding: 0 var(--size-0);
+}
+
+.drawer-list {
+  padding-left: var(--size-000);
+}
+
+.drawer-list li {
+  margin: 4px 0;
+}
+
+.drawer-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: var(--size-000) var(--size-0);
+  border-radius: var(--radius-md);
+  color: var(--color-grey-500);
+}
+
+.drawer-list li a:hover {
+  color: var(--text-white);
+  background-color: var(--color-red-300);
+}
+
+.drawer-list .drawer-active {
+  color: var(--text-white);
+  background-color: var(--color-red-300);
+}
