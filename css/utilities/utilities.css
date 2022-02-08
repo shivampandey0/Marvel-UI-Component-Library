@@ -1,5 +1,8 @@
-/* margins */
+.border{
+  border: 1px solid var(--border);
+}
 
+/* margins */
 .m-auto {
   margin: auto;
 }

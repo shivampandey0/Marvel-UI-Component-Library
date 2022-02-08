@@ -11,7 +11,7 @@ p,
 .h3,
 .h4,
 .h5 {
-  line-height: 2;
+  line-height: 1.33;
   font-weight: var(--weight-regular);
 }
 
