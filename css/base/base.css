@@ -1,12 +1,27 @@
 @import "reset.css";
 
-/* global variables */
 :root {
   /* Radius variables */
   --radius-sm: 3px;
   --radius-md: 4px;
   --radius-lg: 8px;
   --radius-round: 50%;
+
+  /* font sizes and things that needs to be scaled using rem */
+
+  --scale-025: 0.25rem;
+  --scale-05: 0.5rem;
+  --scale-075: 0.75rem;
+  --scale-1: 1rem;
+  --scale-2: 2rem;
+  --scale-3: 3rem;
+  --scale-4: 4rem;
+  --scale-5: 5rem;
+  --scale-6: 6rem;
+  --scale-7: 7rem;
+  --scale-8: 8rem;
+  --scale-9: 9rem;
+  --scale-10: 10rem;
 
   /* font-weights */
   --weight-light: 300;
@@ -17,20 +32,41 @@
   --weight-extrabold: 800;
   --weight-black: 900;
 
-  /* sizes */
-  --size-000: 0.5rem;
-  --size-00: 0.75rem;
-  --size-0: 1rem;
-  --size-1: 1.25rem;
-  --size-2: 1.5rem;
-  --size-3: 1.75rem;
-  --size-4: 2rem;
-  --size-5: 2.5rem;
-  --size-6: 3rem;
-  --size-7: 4rem;
-  --size-8: 8rem;
-  --size-9: 16rem;
-  --size-10: 20rem;
+  /* sizes for margin,padding,w,h based on multiples of 4*/
+  --size-px: 1px;
+  --size-1: 4px;
+  --size-2: 8px;
+  --size-3: 12px;
+  --size-4: 16px;
+  --size-5: 20px;
+  --size-6: 24px;
+  --size-7: 28px;
+  --size-8: 32px;
+  --size-9: 36px;
+  --size-10: 40px;
+  --size-11: 44px;
+  --size-12: 48px;
+  --size-14: 56px;
+  --size-16: 64px;
+  --size-20: 80px;
+  --size-24: 96px;
+  --size-28: 112px;
+  --size-32: 128px;
+  --size-36: 144px;
+  --size-40: 160px;
+  --size-44: 176px;
+  --size-48: 192px;
+  --size-52: 208px;
+  --size-56: 224px;
+  --size-60: 240px;
+  --size-64: 256px;
+  --size-72: 288px;
+  --size-80: 320px;
+  --size-96: 384px;
+  --size-full: 100%;
+  --size-screen: 100vw;
+  --size-min: min-content;
+  --size-max: max-content;
 
   /* Z-indexes */
   --z-below: -1;
@@ -44,5 +80,4 @@
 
 html {
   scroll-behavior: smooth;
-  color: var(--text-black);
 }

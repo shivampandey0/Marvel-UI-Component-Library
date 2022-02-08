@@ -1,20 +1,21 @@
 /* Base Button */
 
 .btn {
-  background-color: var(--text-white);
-  border: 1px solid transparent;
-  color: var(--text-black);
   cursor: pointer;
-  padding: 0.5rem 1rem;
-
-  font-size: 1rem;
   white-space: nowrap;
+  border: 2px solid transparent;
+
+  color: var(--black);
+  font-size: var(--scale-1);
+  background-color: var(--white);
+  font-weight: var(--weight-regular);
+  padding: var(--scale-05) var(--scale-1);
 
   /* flex-properties */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: var(--scale-05);
 }
 
 .btn:hover {
@@ -24,57 +25,56 @@
 /* Primary Button */
 
 .btn-primary {
-  background-color: var(--primary);
+  color: var(--white);
   border-color: var(--primary);
-  color: var(--text-white);
+  background-color: var(--primary);
 }
 
 .btn-primary:hover,
 .btn-fab:hover {
-  background-color: var(--primary-dark);
   border-color: var(--primary-dark);
+  background-color: var(--primary-dark);
 }
 
 /* Secondary Button */
 
 .btn-secondary {
-  background-color: var(--grey-light);
-  border-color: var(--grey-light);
-  color: var(--text-white);
+  opacity: 0.7;
+  background-color: var(--grey);
+  border-color: var(--grey);
+  color: var(--white);
 }
 
 .btn-secondary:hover {
-  background-color: var(--grey);
+  opacity: 1;
   border-color: var(--grey);
+  background-color: var(--grey);
 }
 
 /* Outline Button */
 
 .btn-outline {
-  background-color: transparent;
   color: var(--primary);
   border-color: var(--primary);
+  background-color: transparent;
 }
 
 .btn-outline:hover {
   background-color: var(--primary);
   border-color: var(--primary);
-  color: var(--text-white);
+  color: var(--white);
 }
 
 /* Link Button */
 
 .btn-link {
-  background-color: var(--alert-primary);
-  border-color: var(--alert-primary);
-  color: var(--text-white);
+  color: var(--link);
   text-decoration: none;
-  opacity: 0.9;
 }
 
 .btn-link:hover {
-  text-decoration: underline;
-  opacity: 1;
+  border-color: transparent;
+  border-bottom-color: inherit;
 }
 
 /* icon button */
@@ -86,13 +86,13 @@
 /* Floating Action Button */
 
 .btn-fab {
+  border-color: transparent;
+  width: var(--scale-3);
+  height: var(--scale-3);
+  color: var(--white);
   background-color: var(--primary);
-  color: var(--text-white);
   border-radius: var(--radius-round);
-  font-size: 1.2rem;
-  width: 3rem;
-  height: 3rem;
-  border: none;
+  font-size: calc(var(--scale-2) - var(--scale-075));
 }
 
 /* full width button */
