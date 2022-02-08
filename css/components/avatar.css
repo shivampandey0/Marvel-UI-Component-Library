@@ -1,7 +1,6 @@
 .avatar {
   border-radius: var(--radius-round);
-  margin: 0.5rem;
-  border: 2px solid white;
+  border: calc(var(--size-px) * 2) solid transparent;
 }
 
 .avatar-text {
@@ -13,25 +12,25 @@
 }
 
 .avatar-lg {
-  width: 8rem;
-  height: 8rem;
-  font-size: 2rem;
+  width: var(--scale-8);
+  height: var(--scale-8);
+  font-size: var(--scale-2);
 }
 
 .avatar-md {
-  width: 6rem;
-  height: 6rem;
-  font-size: 1.5rem;
+  width: var(--scale-6);
+  height: var(--scale-6);
+  font-size: calc(var(--scale-3) / 2);
 }
 
 .avatar-sm {
-  width: 4rem;
-  height: 4rem;
-  font-size: 1.2rem;
+  width: var(--scale-4);
+  height: var(--scale-4);
+  font-size: calc(var(--scale-2) - var(--scale-075));
 }
 
 .avatar-xs {
-  width: 2rem;
-  height: 2rem;
-  font-size: 0.75rem;
+  width: var(--scale-2);
+  height: var(--scale-2);
+  font-size: var(--scale-075);
 }
