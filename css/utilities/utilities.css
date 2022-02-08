@@ -1,0 +1,57 @@
+/* margins */
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-1 {
+  margin: 0 var(--scale-1);
+}
+
+.my-1 {
+  margin: var(--scale-1) 0;
+}
+
+.m-xy-1 {
+  margin: var(--scale-1);
+}
+
+/* padding */
+
+.px-1 {
+  padding: 0 var(--scale-1);
+}
+
+.py-1 {
+  padding: var(--scale-1) 0;
+}
+
+.p-xy-1 {
+  padding: var(--scale-1);
+}
+
+/* font-weight */
+
+.fw-light {
+  font-weight: var(--weight-light);
+}
+
+.fw-regular {
+  font-weight: var(--weight-regular);
+}
+
+.fw-medium {
+  font-weight: var(--weight-medium);
+}
+
+.fw-sb {
+  font-weight: var(--weight-semiblod);
+}
+
+.fw-bold {
+  font-weight: var(--weight-bold);
+}
+
+.fw-exb {
+  font-weight: var(--weight-extrabold);
+}
