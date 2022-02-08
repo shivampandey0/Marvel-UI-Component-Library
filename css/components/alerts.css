@@ -1,68 +1,51 @@
 .alert {
-  position: relative;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-  text-align: start;
-  width: 100%;
-  font-size: 1rem;
-  opacity: 0.9;
-  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: var(--size-px) solid;
+  padding: var(--size-2) var(--scale-1);
+  width: var(--size-full);
+  font-size: var(--scale-1);
+  border-radius: var(--radius-md);
 }
 
 .alert-primary {
-  background-color: var(--alert-primary);
-}
-
-.alert-secondary {
-  background-color: var(--alert-secondary);
+  color: var(--primary-dark);
+  background-color: var(--primary-light);
+  padding: var(--scale-1);
 }
 
 .alert-success {
-  background-color: var(--success);
+  color: var(--success);
+  background-color: var(--success-bg);
 }
 
 .alert-danger {
-  background-color: var(--danger);
+  color: var(--danger);
+  background-color: var(--danger-bg);
 }
 
 .alert-warning {
-  background-color: var(--warning);
-  color: var(--text-black);
+  color: var(--warning);
+  background-color: var(--warning-bg);
 }
 
 .alert-link {
   color: inherit;
   font-weight: bold;
+  text-decoration: underline;
 }
 
-.alert-icon {
-  margin-right: 8px;
-  font-size: inherit;
-}
-
-.btn-close {
-  /* A single image, centered and scaled  */
-  background: url("../assets/close.svg") no-repeat center/80%;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  outline: none;
-  opacity: 0.5;
+.alert > span .icon{
+  font-size: var(--scale-1);
+  padding: var(--size-2);
   cursor: pointer;
-  margin: 0.75rem;
-  padding: 8px;
-  z-index: 2;
 }
 
-.btn-close:hover {
+.alert .delete{
+  opacity: 0.7;
+}
+
+.alert .delete:hover{
   opacity: 1;
-}
-
-.btn-close:focus {
-  box-shadow: 0 0 0 2px var(--text-black);
 }
