@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+@import "../../css/marvel-ui.css";
+@import "./navbar.css";
+@import "./drawer.css";
+@import "./variables.css";
+@import "./utilities.css";
+
+p,
+body {
+  font-family: var(--roboto-family);
+}
+
+/* Drawer */
+.doc-container {
+  display: grid;
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+  padding: var(--size-4);
+  grid-template-columns: 1fr auto;
+  justify-items: center;
+}
+
+.doc-content {
+  min-width: 0;
+  max-width: 80%;
+  padding: 0 var(--size-4);
+}
+
+@media screen and (max-width: 600px) {
+}
