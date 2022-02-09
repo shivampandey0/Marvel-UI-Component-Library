@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./styles/docs.css">
     <title>Get Started | Marve UI</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="flex-row justify-sb navbar">
-            <h2 class="grow-1"><a class="logo" href="./index.html">Marvel UI</a></h2>
-            <a href="../index.html" class="btn">Home</a>
-            <a href="./get-started.html" class="btn active">Docs</a>
-            <a href="#" class="btn ">Contribute <i class="fab fa-github"></i></a>
+    <header class="header flex-row px-1 align-cntr ">
+        <h2 class="grow-1"><a class="nav-logo" href="../index.html">Marvel UI</a></h2>
+        <button class="btn hamburger-menu"><i class="fas fa-bars icon"></i></button>
+        <nav class="nav mobile-nav">
+            <button class="btn nav-close-btn"><i class="fas fa-2x fa-times"></i></button>
+            <ul class="menu">
+                <a href="../index.html" class="btn btn-link ">Home</a>
+                <a href="./get-started.html" class="btn btn-link active">Docs</a>
+                <a href="#" class="btn btn-link">Contribute <i class="fab fa-github"></i></a>
+            </ul>
         </nav>
     </header>
 
-    <main class="doc-container flex-row">
-        <aside class="drawer flex-column">
+    <div class="py-1 mobile-menu">Menu <i class="fa-solid fa-angle-up"></i></div>
+
+    <main class="doc-container">
+        <aside class="drawer">
             <h3>Get Started</h3>
             <ul class="drawer-list">
                 <li><a class="drawer-active" href="./get-started.html">Installation</a></li>
@@ -37,16 +43,22 @@
                 <li><a href="#">Text Utils</a></li>
             </ul>
         </aside>
-        <section class="content grow-1">
+        <div class="doc-content">
             <h2>Get Started</h2>
             <hr>
-            <h3>Installation Guide</h3>
-            <p>In order to introduce Sparrow to your project, Copy the Link given below and paste it in the <span class="card-badge">&lt;head> </span>tag of your html, above all other style sheets.</p>
+            <h2 class="py-1">Installation Guide</h2>
 
-            
+            <p>In order to introduce Marvel UI to your project, Copy the Link given below and paste it in the <span
+                    class="card-badge">&lt;head> </span>tag of your html, above all other style sheets.</p>
 
-        </section>
+            <code class="m-xy-1">
+                <script
+                    src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F391cb469d4d394de8bee634ea0a19caad3f6a7b5%2Fcss%2Findex.html%23L8&style=github&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+            </code>
+        </div>
     </main>
+
+    <script src="./js/index.js"></script>
 
 </body>
 

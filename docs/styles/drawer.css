@@ -1,5 +1,8 @@
 .drawer {
   padding: 0 var(--size-4);
+  position: sticky;
+  height: 90vh;
+  overflow-y: auto;
 }
 
 .drawer-list {
@@ -27,4 +30,41 @@
 .drawer-list .drawer-active {
   color: var(--white);
   background-color: var(--primary);
+}
+
+/* Mobile Menu */
+
+.mobile-menu{
+  display: none;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: var(--z-3);
+  padding-left: var(--scale-05);
+  font-weight: var(--weight-semibold);
+  background-color: var(--primary-light);
+}
+
+@media screen and (max-width: 768px) {
+  .drawer {
+    /* top: calc(var(--size-1) * 25px); */
+    /* right: 0; */
+    /* left: -100%; */
+
+    top: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all;
+    background-color: var(--primary-light);
+  }
+
+  .mobile-menu{
+    display: block;
+  }
+
+  .open-drawer{
+    top: 130px;
+    z-index: var(--z-4);
+  }
 }
