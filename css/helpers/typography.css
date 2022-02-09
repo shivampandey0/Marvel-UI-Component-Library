@@ -18,55 +18,55 @@ p,
 .h1,
 h1 {
   /* 3rem */
-  font-size: var(--size-6);
+  font-size: var(--scale-3);
 }
 
 .h2,
 h2 {
   /* 2rem */
-  font-size: var(--size-4);
+  font-size: var(--scale-2);
 }
 
 .h3,
 h3 {
   /* 1.5rem */
-  font-size: var(--size-2);
+  font-size: calc(var(--scale-3) / 2);
 }
 
 .h4,
 h4 {
   /* 1rem */
-  font-size: var(--size-0);
+  font-size: var(--scale-1);
 }
 
 .h5,
 h5 {
   /* 0.5rem */
-  font-size: var(--size-000);
+  font-size: var(--scale-05);
   line-height: 2;
 }
 
 /* Paragraph Text */
 
 .txt-xl{
-  font-size: var(--size-6);
+  font-size: var(--scale-3);
 }
 
 .txt-lg {
-  font-size: var(--size-4);
+  font-size: var(--scale-2);
 }
 
 .txt-md {
-  font-size: var(--size-2);
+  font-size: calc(var(--scale-3) / 2);
 }
 
 .txt-sm {
-  font-size: var(--size-0);
+  font-size: var(--scale-1);
 }
 
 .txt-xs {
-  font-size: var(--size-000);
-  line-height: 1.33;
+  font-size: var(--scale-05);
+  line-height: 2;
 }
 
 /* Text Utilities */
@@ -76,7 +76,7 @@ h5 {
 }
 
 .txt-grey {
-  color: var(--color-grey-500);
+  color: var(--grey);
 }
 
 .txt-striked {
