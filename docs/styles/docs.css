@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-@import "../../css/marvel-ui.css";
 @import "./navbar.css";
 @import "./drawer.css";
 @import "./variables.css";
@@ -11,7 +10,13 @@ body {
   font-family: var(--roboto-family);
 }
 
-/* Drawer */
+.example {
+  margin: var(--scale-1);
+  padding: var(--scale-1);
+  border: 1px solid var(--border);
+}
+
+/* Doc Container */
 .doc-container {
   display: grid;
   margin: 0 auto;
@@ -20,6 +25,7 @@ body {
   padding: var(--size-4);
   grid-template-columns: 1fr 4fr;
   justify-items: center;
+  
 }
 
 .doc-content {
@@ -29,21 +35,20 @@ body {
 }
 
 /* bottom nav */
-
-.bottom-nav{
+.bottom-nav {
   display: flex;
   margin: var(--scale-1) var(--scale-05);
   justify-content: space-between;
   font-weight: var(--weight-semibold);
 }
 
-.bottom-nav > .btn{
+.bottom-nav > .btn {
   border: none;
   padding: var(--scale-05) 0;
   color: var(--grey);
 }
 
-.bottom-nav > .btn:hover{
+.bottom-nav > .btn:hover {
   color: var(--black);
 }
 
@@ -67,7 +72,12 @@ body {
     font-size: var(--scale-1);
   }
 
-  .txt-sm{
+  .txt-sm {
     font-size: var(--scale-075);
   }
+}
+
+/* Class to hide any element */
+.hide{
+  display: none;
 }

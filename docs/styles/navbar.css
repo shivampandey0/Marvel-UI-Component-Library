@@ -1,7 +1,5 @@
 .header {
-  position: sticky;
   width: 100%;
-  top: 0;
   padding: var(--size-2) var(--size-4);
   z-index: var(--z-5);
   background-color: var(--white);
@@ -72,7 +70,6 @@
   .menu {
     margin: var(--size-20);
     flex-direction: column;
-    /* flex-grow: 1; */
     gap: 1rem;
   }
 }

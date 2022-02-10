@@ -1,6 +1,7 @@
 .drawer {
-  padding: 0 var(--size-4);
+  top: 0px;
   position: sticky;
+  padding: 0 var(--size-4);
   height: 90vh;
   overflow-y: auto;
 }
@@ -34,11 +35,11 @@
 
 /* Mobile Menu */
 
-.mobile-menu{
+.mobile-menu {
   display: none;
   cursor: pointer;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: var(--z-3);
   padding-left: var(--scale-05);
   font-weight: var(--weight-semibold);
@@ -47,24 +48,19 @@
 
 @media screen and (max-width: 768px) {
   .drawer {
-    /* top: calc(var(--size-1) * 25px); */
-    /* right: 0; */
-    /* left: -100%; */
-
     top: -100%;
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: 0.5s all;
     background-color: var(--primary-light);
   }
 
-  .mobile-menu{
+  .mobile-menu {
     display: block;
   }
 
-  .open-drawer{
+  .open-drawer {
     top: 130px;
-    z-index: var(--z-4);
+    z-index: var(--z-5);
   }
 }
