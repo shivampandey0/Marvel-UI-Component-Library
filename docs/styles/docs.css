@@ -28,6 +28,25 @@ body {
   padding: 0 var(--size-4);
 }
 
+/* bottom nav */
+
+.bottom-nav{
+  display: flex;
+  margin: var(--scale-1) var(--scale-05);
+  justify-content: space-between;
+  font-weight: var(--weight-semibold);
+}
+
+.bottom-nav > .btn{
+  border: none;
+  padding: var(--scale-05) 0;
+  color: var(--grey);
+}
+
+.bottom-nav > .btn:hover{
+  color: var(--black);
+}
+
 @media screen and (max-width: 768px) {
   .doc-container {
     display: grid;

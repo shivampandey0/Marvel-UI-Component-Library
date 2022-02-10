@@ -14,6 +14,6 @@
   border-bottom: 2px solid var(--primary);
 }
 
-.btn-link:hover {
+.menu .btn-link:hover {
   border-bottom-color: var(--primary);
 }
