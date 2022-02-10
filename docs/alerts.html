@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://marvel-ui.vercel.app/css/marvel-ui.css" />
+    <link rel="stylesheet" href="./styles/docs.css" />
+    <title>Get Started | Marve UI</title>
+</head>
+
+<body>
+    <header class="header flex-row px-1 align-cntr">
+        <h2 class="grow-1">
+            <a class="nav-logo" href="../index.html">Marvel UI</a>
+        </h2>
+        <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+        </button>
+        <nav class="nav mobile-nav">
+            <button class="btn nav-close-btn">
+                <i class="fas fa-2x fa-times"></i>
+            </button>
+            <ul class="menu">
+                <a href="../index.html" class="btn btn-link">Home</a>
+                <a href="./get-started.html" class="btn btn-link active">Docs</a>
+                <a href="https://github.com/shivampandey0/Marvel-UI-Component-Library" target="_blank"
+                    class="btn btn-link">Contribute <i class="fab fa-github"></i></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="py-1 mobile-menu">
+            Menu <i class="fa-solid fa-angle-up"></i>
+        </div>
+        <section class="doc-container">
+
+            <aside class="drawer">
+                <h3>Get Started</h3>
+                <ul class="drawer-list">
+                    <li><a href="./get-started.html">Installation</a></li>
+                </ul>
+                <h3>Components</h3>
+                <ul class="drawer-list">
+                    <li><a class="drawer-active" href="./alerts.html">Alerts</a></li>
+                    <li><a href="#">Avatars</a></li>
+                    <li><a href="#">Badges</a></li>
+                    <li><a href="#">Buttons</a></li>
+                    <li><a href="#">Cards</a></li>
+                    <li><a href="#">Input</a></li>
+                    <li><a href="#">Images</a></li>
+                    <li><a href="#">Text Utils</a></li>
+                </ul>
+            </aside>
+            <div class="doc-content">
+                <h2>Alerts</h2>
+                <hr class="my-1" />
+                <h2>Introduction</h2>
+                <p class="my-1">
+                    An alert displays a short, important message in a way that attracts
+                    the user's attention without interrupting the user's task. By using
+                    alerts, you provide contextual feedback messages to your users,
+                    depending on actions performed by them.
+                </p>
+
+                <h2 class="py-1">Simple Alerts</h2>
+
+                <p>
+                    Simple Alert is there to show some quick info to the user or have a
+                    link in it for the user to take action. By default all the actions the
+                    100% width of the container.
+                </p>
+
+                <section class="example flex-column gap-1">
+                    <div class="alert alert-primary" role="alert">
+                        This is a Primary Alert with text only.
+                    </div>
+
+                    <div class="alert alert-primary" role="alert">
+                        <span>This is a Primary Alert with
+                            <a class="alert-link" href="#">an example link</a>
+                        </span>
+                    </div>
+                    <h4>Code:</h4>
+                    <code>
+            <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F1273e25ca4f8c4c27ea39e96d96c38c261b5fe34%2Fdocs%2Fexamples%2Fexamples.html%23L16-L24&style=github&showBorder=on&showCopy=on"></script>
+          </code>
+                </section>
+
+                <h2 class="py-1">Alerts with icon</h2>
+                <p>
+                    An icon is used inside the alert to visually convey the type and
+                    importance of the alert to the user. Icons used here are imported from
+                    FontAwesome and can easily be changed.
+                </p>
+
+                <section class="example flex-column gap-1">
+                    <!-- Alerts with icon -->
+                    <div class="alert alert-success" role="alert">
+                        <span class="alert-icon"><i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                            This is a Success Alert
+                        </span>
+                    </div>
+
+                    <div class="alert alert-warning" role="alert">
+                        <span class="alert-icon"><i class="fas fa-exclamation-circle icon" aria-hidden="true"></i>
+                            This is a Warning Alert
+                        </span>
+                    </div>
+
+                    <div class="alert alert-danger" role="alert">
+                        <span class="alert-icon"><i class="fas fa-exclamation-triangle icon" aria-hidden="true"></i>
+                            This is a Danger Alert
+                        </span>
+                    </div>
+
+                    <h4>Code:</h4>
+                    <code>
+            <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F2243551e541875123069d12ec52b5fd61d4ffee8%2Fdocs%2Fexamples%2Fexamples.html%23L26-L43&style=github&showBorder=on&showCopy=on"></script>
+          </code>
+                </section>
+
+                <h2 class="py-1">Alerts with Dismiss</h2>
+                <p>
+                    An icon is used inside the alert to visually convey the type and
+                    importance of the alert to the user <strong> with a dismiss icon at the end to
+                        close the alert.</strong>
+                </p>
+
+                <section class="example flex-column gap-1">
+                    <!-- Alerts with dismiss -->
+                    <div class="alert alert-success" role="alert">
+                        <span class="alert-icon"><i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                            This is a Success Alert with dismiss
+                        </span>
+                        <span class="delete"><i class="fas fa-close icon"></i></span>
+                    </div>
+
+                    <div class="alert alert-warning" role="alert">
+                        <span class="alert-icon"><i class="fas fa-exclamation-circle icon" aria-hidden="true"></i>
+                            This is a Warning Alert with dismiss
+                        </span>
+                        <span class="delete"><i class="fas fa-close icon"></i></span>
+                    </div>
+
+                    <div class="alert alert-danger" role="alert">
+                        <span><i class="fas fa-exclamation-triangle icon" aria-hidden="true"></i>
+                            This is a Danger Alert with dismiss
+                        </span>
+                        <span class="delete"><i class="fas fa-close icon"></i></span>
+                    </div>
+
+                    <button class="btn btn-secondary hide" id="resetAlerts">Reset</button>
+
+                    <h4>Code:</h4>
+                    <code>
+            <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F2243551e541875123069d12ec52b5fd61d4ffee8%2Fdocs%2Fexamples%2Fexamples.html%23L45-L65&style=github&showBorder=on&showCopy=on"></script>
+          </code>
+                </section>
+                <hr class="my-1" />
+                <div class="bottom-nav">
+                    <a href="./get-started.html" class="btn"><i class="fas fa-chevron-left"></i> Installation</a>
+                    <a href="./avatars.html" class="btn">Avatars <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

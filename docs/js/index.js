@@ -1,3 +1,4 @@
+// Hamberger Menu
 const hamburger = document.querySelector(".hamburger-menu");
 const closenav = document.querySelector(".nav-close-btn");
 const mobNav = document.querySelector(".mobile-nav");
@@ -26,3 +27,27 @@ mobileMenu.addEventListener('click',() => {
         mobileMenu.innerHTML = ` Menu <i class="fa-solid fa-angle-up"></i>`;
     }
 })
+
+
+// Dismissable Alerts and other elements
+const dismissElement = document.querySelectorAll(".delete");
+const resetAlerts = document.querySelector("#resetAlerts");
+
+dismissElement.forEach(e => {    
+    e.addEventListener("click", (e) => {
+        let parentElement = e.target.parentElement.parentElement;
+        console.log(parentElement);
+        parentElement.style.display = "none";
+        resetAlerts.classList.remove("hide");
+    })
+});
+
+resetAlerts.addEventListener('click',()=>{
+  dismissElement.forEach(e => {
+      let parentElement = e.parentElement;
+      parentElement.style.display = "";
+      resetAlerts.classList.add("hide");
+
+  })
+});
+
