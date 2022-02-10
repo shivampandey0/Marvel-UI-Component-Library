@@ -1,0 +1,7 @@
+:root {
+  /* fonts */
+  --roboto-family: "Roboto", sans-serif;  
+
+  /* overridden colors */
+  --link: var(--black);
+}

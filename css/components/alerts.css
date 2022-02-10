@@ -36,16 +36,16 @@
   text-decoration: underline;
 }
 
-.alert > span .icon{
+.alert > span .icon {
   font-size: var(--scale-1);
   padding: var(--size-2);
   cursor: pointer;
 }
 
-.alert .delete{
+.alert .delete {
   opacity: 0.7;
 }
 
-.alert .delete:hover{
+.alert .delete:hover {
   opacity: 1;
 }

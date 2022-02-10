@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+@import "./navbar.css";
+@import "./drawer.css";
+@import "./variables.css";
+@import "./utilities.css";
+
+p,
+body {
+  font-family: var(--roboto-family);
+}
+
+.example {
+  margin: var(--scale-1);
+  padding: var(--scale-1);
+  border: 1px solid var(--border);
+}
+
+/* Doc Container */
+.doc-container {
+  display: grid;
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+  padding: var(--size-4);
+  grid-template-columns: 1fr 4fr;
+  justify-items: center;
+  
+}
+
+.doc-content {
+  min-width: 0;
+  max-width: 100%;
+  padding: 0 var(--size-4);
+}
+
+/* bottom nav */
+.bottom-nav {
+  display: flex;
+  margin: var(--scale-1) var(--scale-05);
+  justify-content: space-between;
+  font-weight: var(--weight-semibold);
+}
+
+.bottom-nav > .btn {
+  border: none;
+  padding: var(--scale-05) 0;
+  color: var(--grey);
+}
+
+.bottom-nav > .btn:hover {
+  color: var(--black);
+}
+
+@media screen and (max-width: 768px) {
+  .doc-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .txt-xl {
+    font-size: var(--scale-2);
+  }
+
+  .txt-lg {
+    font-size: calc(var(--scale-3) / 2);
+  }
+
+  .txt-md {
+    font-size: var(--scale-1);
+  }
+
+  .txt-sm {
+    font-size: var(--scale-075);
+  }
+}
+
+/* Class to hide any element */
+.hide{
+  display: none;
+}

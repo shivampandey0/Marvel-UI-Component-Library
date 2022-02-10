@@ -1,0 +1,19 @@
+/* widths */
+
+.mxw-800 {
+  max-width: 800px;
+}
+
+.mxw-1200 {
+  max-width: 1200px;
+}
+
+/* btn states */
+.active {
+  font-weight: var(--weight-bold);
+  border-bottom: 2px solid var(--primary);
+}
+
+.menu .btn-link:hover {
+  border-bottom-color: var(--primary);
+}
