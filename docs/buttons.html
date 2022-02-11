@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://marvel-ui.vercel.app/css/marvel-ui.css" />
+    <link rel="stylesheet" href="./styles/docs.css" />
+    <title>Buttons | Marvel UI</title>
+</head>
+
+<body>
+    <header class="header flex-row px-1 align-cntr">
+        <h2 class="grow-1">
+            <a class="nav-logo" href="../index.html">Marvel UI</a>
+        </h2>
+        <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+        </button>
+        <nav class="nav mobile-nav">
+            <button class="btn nav-close-btn">
+                <i class="fas fa-2x fa-times"></i>
+            </button>
+            <ul class="menu">
+                <a href="../index.html" class="btn btn-link">Home</a>
+                <a href="./get-started.html" class="btn btn-link active">Docs</a>
+                <a href="https://github.com/shivampandey0/Marvel-UI-Component-Library" target="_blank"
+                    class="btn btn-link">Contribute <i class="fab fa-github"></i></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="py-1 mobile-menu">
+            Menu <i class="fa-solid fa-angle-up"></i>
+        </div>
+        <section class="doc-container">
+            <aside class="drawer">
+                <h3>Get Started</h3>
+                <ul class="drawer-list">
+                    <li><a href="./get-started.html">Installation</a></li>
+                </ul>
+                <h3>Components</h3>
+                <ul class="drawer-list">
+                    <li><a href="./alerts.html">Alerts</a></li>
+                    <li><a href="./avatars.html">Avatars</a></li>
+                    <li><a href="./badges.html">Badges</a></li>
+                    <li><a class="drawer-active" href="./buttons.html">Buttons</a></li>
+                    <li><a href="./cards.html">Cards</a></li>
+                    <li><a href="./inputs.html">Input</a></li>
+                    <li><a href="./images.html">Images</a></li>
+                    <li><a href="./typography.html">Typography</a></li>
+                </ul>
+            </aside>
+            <div class="doc-content">
+                <h2>Buttons</h2>
+                <hr class="my-1" />
+                <h2>Introduction</h2>
+                <p class="my-1">
+                    Buttons are the essentials of any interactive Web Application.
+                    Buttons allow users to take actions, and make choices, with a single
+                    tap.
+                </p>
+
+                <h2 class="py-1">Default, Primary and Secondary Button</h2>
+
+                <p>
+                    Default Button is a single core class for default button. Primary
+                    and Secondary buttons are contained buttons, distinguished by their
+                    color. They contain actions that are primary and secondary to your
+                    app.
+                </p>
+
+                <section class="example flex-column gap-1">
+                    <div class="flex-column gap-1 flex-center">
+                        <button class="btn">Default</button>
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                    </div>
+                    <h4>Code:</h4>
+                    <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F5df2676d283ffd8b7ab7b04a5a285ed2211b7a11%2Fdocs%2Fexamples%2Fexamples.html%23L172-L174&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+                </section>
+
+                <h2 class="py-1">Outline Button</h2>
+
+                <p>
+                    Outline Button is a hollow button having border and text only but on
+                    hover It takes the full color to grab the user attention.
+                </p>
+
+                <section class="example flex-column gap-1">
+                    <div class="flex-column gap-1 flex-center">
+                        <button class="btn btn-outline">Outline</button>
+                    </div>
+                    <h4>Code:</h4>
+                    <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F5df2676d283ffd8b7ab7b04a5a285ed2211b7a11%2Fdocs%2Fexamples%2Fexamples.html%23L175&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+                </section>
+
+                <h2 class="py-1">Link Button</h2>
+
+                <p>
+                    Link Button is available for use when button contains a link and button needs to standout from other
+                    library buttons.
+                </p>
+
+                <section class="example flex-column gap-1">
+                    <div class="flex-column gap-1 flex-center">
+                        <button class="btn btn-link">Link</button>
+                    </div>
+                    <h4>Code:</h4>
+                    <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F5df2676d283ffd8b7ab7b04a5a285ed2211b7a11%2Fdocs%2Fexamples%2Fexamples.html%23L176&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+                </section>
+
+                <h2 class="py-1">Icon Button</h2>
+
+                <p>
+                Button with icons empowers your user by visually showing the purpose of the button.
+                Icons are imported and used from <span class="highlight">FontAwesome</span>.
+                </p>
+
+                <section class="example flex-column gap-1">
+                    <div class="flex-column gap-1 flex-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart icon"></i> Add to Cart
+                        </button>
+                    </div>
+                    <h4>Code:</h4>
+                    <code>
+                      <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F5df2676d283ffd8b7ab7b04a5a285ed2211b7a11%2Fdocs%2Fexamples%2Fexamples.html%23L177-L179&style=github&showBorder=on&showCopy=on"></script>
+                    </code>
+                </section>
+
+                <hr class="my-1" />
+                <div class="bottom-nav">
+                    <a href="./badges.html" class="btn"><i class="fas fa-chevron-left"></i> Badges</a>
+                    <a href="./cards.html" class="btn">Cards <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

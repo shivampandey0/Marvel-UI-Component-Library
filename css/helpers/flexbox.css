@@ -39,19 +39,19 @@
 
 /* flex gaps */
 .gap-05 {
-  gap: var(--size-000);
+  gap: var(--scale-05);
 }
 
 .gap-1 {
-  gap: 1rem;
+  gap: var(--scale-1);
 }
 
 .gap-2 {
-  gap: 2rem;
+  gap: var(--scale-2);
 }
 
 .gap-3 {
-  gap: 3rem;
+  gap: var(--scale-3);
 }
 
 /* flex orders */

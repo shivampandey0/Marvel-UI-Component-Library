@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://marvel-ui.vercel.app/css/marvel-ui.css" />
+    <link rel="stylesheet" href="./styles/docs.css" />
+    <title>Avatars | Marvel UI</title>
+</head>
+
+<body>
+    <header class="header flex-row px-1 align-cntr">
+        <h2 class="grow-1">
+            <a class="nav-logo" href="../index.html">Marvel UI</a>
+        </h2>
+        <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+        </button>
+        <nav class="nav mobile-nav">
+            <button class="btn nav-close-btn">
+                <i class="fas fa-2x fa-times"></i>
+            </button>
+            <ul class="menu">
+                <a href="../index.html" class="btn btn-link">Home</a>
+                <a href="./get-started.html" class="btn btn-link active">Docs</a>
+                <a href="https://github.com/shivampandey0/Marvel-UI-Component-Library" target="_blank"
+                    class="btn btn-link">Contribute <i class="fab fa-github"></i></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="py-1 mobile-menu">
+            Menu <i class="fa-solid fa-angle-up"></i>
+        </div>
+        <section class="doc-container">
+            <aside class="drawer">
+                <h3>Get Started</h3>
+                <ul class="drawer-list">
+                    <li><a href="./get-started.html">Installation</a></li>
+                </ul>
+                <h3>Components</h3>
+                <ul class="drawer-list">
+                    <li><a href="./alerts.html">Alerts</a></li>
+                    <li><a class="drawer-active" href="./avatars.html">Avatars</a></li>
+                    <li><a href="./badges.html">Badges</a></li>
+                    <li><a href="./buttons.html">Buttons</a></li>
+                    <li><a href="./cards.html">Cards</a></li>
+                    <li><a href="./inputs.html">Input</a></li>
+                    <li><a href="./images.html">Images</a></li>
+                    <li><a href="./typography.html">Typography</a></li>
+                </ul>
+            </aside>
+            <div class="doc-content">
+                <h2>Avatars</h2>
+                <hr class="my-1" />
+                <h2>Introduction</h2>
+                <p class="my-1">
+                    Avatars give each user their own identity on the ever growing number of social platforms.
+                    Using our various types of avatars, you can give your users flexibililty in the way they want to
+                    express themselves,
+                    while also ensuring the avatars stick to your theme.
+                    Each avatar must have the class <span class="highlight">avatar</span> inside it's parent.
+                    There are four sizes available: <span class="highlight">avatar-sm</span> , <span
+                        class="highlight">avatar-md</span> , <span class="highlight">avatar-lg</span> & <span
+                        class="highlight">avatar-xl</span>
+                </p>
+
+                <h2 class="py-1">Image Avatars</h2>
+
+                <p>
+                    Image avatars are available they can use any network image or locally stored image from assets.
+                </p>
+
+                <section class="example flex-column gap-1">
+                    <!-- Image Avatar -->
+                    <div class="flex-row flex-center gap-1 flex-wrap">
+                        <img class="avatar avatar-lg" src="https://i.pravatar.cc/300" alt="avatar">
+                        <img class="avatar avatar-md" src="https://i.pravatar.cc/300" alt="avatar">
+                        <img class="avatar avatar-sm" src="https://i.pravatar.cc/300" alt="avatar">
+                        <img class="avatar avatar-xs" src="https://i.pravatar.cc/300" alt="avatar">
+                    </div>
+                    <h4>Code:</h4>
+                    <code>
+            <script
+                src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2Fce627e1d7207bc079704b10ee96cf935da39f8a8%2Fdocs%2Fexamples%2Fexamples.html%23L74-L77&style=github&showBorder=on&showCopy=on"></script>
+          </code>
+                </section>
+
+                <h2 class="py-1">Text Avatars</h2>
+
+                <p>
+                    Text avatars are available for use when images are not available.
+                </p>
+
+                <section class="example flex-column gap-1">
+                    <!-- Image Avatar -->
+                    <div class="flex-row flex-center gap-1 flex-wrap">
+                        <span class="avatar avatar-lg avatar-text">M</span>
+                        <span class="avatar avatar-md avatar-text">M</span>
+                        <span class="avatar avatar-sm avatar-text">M</span>
+                        <span class="avatar avatar-xs avatar-text">M</span>
+                    </div>
+                    <h4>Code:</h4>
+                    <code>
+                        <script
+                            src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2Fce627e1d7207bc079704b10ee96cf935da39f8a8%2Fdocs%2Fexamples%2Fexamples.html%23L81-L84&style=github&showBorder=on&showCopy=on"></script>
+                      </code>
+                </section>
+
+                <hr class="my-1" />
+                <div class="bottom-nav">
+                    <a href="./alerts.html" class="btn"><i class="fas fa-chevron-left"></i> Alerts</a>
+                    <a href="./badges.html" class="btn">Badges <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
