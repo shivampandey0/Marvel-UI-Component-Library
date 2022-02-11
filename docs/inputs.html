@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://marvel-ui.vercel.app/css/marvel-ui.css" />
+    <link rel="stylesheet" href="./styles/docs.css" />
+    <title>Input | Marvel UI</title>
+</head>
+
+<body>
+    <header class="header flex-row px-1 align-cntr">
+        <h2 class="grow-1">
+            <a class="nav-logo" href="../index.html">Marvel UI</a>
+        </h2>
+        <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+        </button>
+        <nav class="nav mobile-nav">
+            <button class="btn nav-close-btn">
+                <i class="fas fa-2x fa-times"></i>
+            </button>
+            <ul class="menu">
+                <a href="../index.html" class="btn btn-link">Home</a>
+                <a href="./get-started.html" class="btn btn-link active">Docs</a>
+                <a href="https://github.com/shivampandey0/Marvel-UI-Component-Library" target="_blank"
+                    class="btn btn-link">Contribute <i class="fab fa-github"></i></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="py-1 mobile-menu">
+            Menu <i class="fa-solid fa-angle-up"></i>
+        </div>
+        <section class="doc-container">
+            <aside class="drawer">
+                <h3>Get Started</h3>
+                <ul class="drawer-list">
+                    <li><a href="./get-started.html">Installation</a></li>
+                </ul>
+                <h3>Components</h3>
+                <ul class="drawer-list">
+                    <li><a href="./alerts.html">Alerts</a></li>
+                    <li><a href="./avatars.html">Avatars</a></li>
+                    <li><a href="./badges.html">Badges</a></li>
+                    <li><a href="./buttons.html">Buttons</a></li>
+                    <li><a href="./cards.html">Cards</a></li>
+                    <li><a class="drawer-active" href="./inputs.html">Input</a></li>
+                    <li><a href="./images.html">Images</a></li>
+                    <li><a href="./typography.html">Typography</a></li>
+                </ul>
+            </aside>
+            <div class="doc-content">
+                <h2>Input</h2>
+                <hr class="my-1" />
+                <h2>Introduction</h2>
+                <div class="my-1">
+                    <p>
+                        Inputs allow website users to enter or share their information,
+                        across many usecases.
+                    </p>
+                    <p>
+                        Primarily used for Sign-up/Login Pages, Feedbacks and for general
+                        user inputs.
+                    </p>
+                    <p>By default, input fields take width of 100% .</p>
+                </div>
+
+                <h2 class="py-1">Sign-up/Login Form</h2>
+
+                <div class="my-1">
+                    <p>
+                        Marvel UI offers a classes for input and textarea to verify user
+                        credentials
+                    </p>
+                    <p>
+                        Each field can also have it's own validation built in to meet your
+                        website's criterias.
+                    </p>
+                    <p class="py-1">
+                        Use the <span class="highlight">required</span> class to label to
+                        indicate required input. Don't forget to add required attribute to
+                        your input element as well.
+                    </p>
+                </div>
+
+                <section class="example flex-column gap-1">
+                    <div>
+                        <form class="flex-column align-cntr" action="#">
+                            <div class="input-group">
+                                <label class="required" for="name">Full Name</label>
+                                <input id="name" class="input" type="text" aria-label="text-input"
+                                    placeholder="John Smith" required="" />
+                            </div>
+                            <div class="input-group">
+                                <label class="required" for="name">Email</label>
+                                <input class="input" type="email" aria-label="text-input" placeholder="John@example.com"
+                                    required />
+                            </div>
+                            <div class="input-group">
+                                <label for="name">Phone</label>
+                                <input class="input" type="text" aria-label="text-input" placeholder="+91 1234 567 890"
+                                    pattern="^(\+91)?\s?[1-9][0-9]{9}$" required />
+                            </div>
+                            <div class="input-group">
+                                <label class="required" for="name">Address</label>
+                                <textarea class="input textarea" placeholder="Enter Address..." required></textarea>
+                            </div>
+                            <div class="input-group">
+                                <label for="name">Comments</label>
+                                <textarea class="input textarea" placeholder="Comments..."></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </form>
+                    </div>
+
+                    <h4>Code:</h4>
+                    <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F5df2676d283ffd8b7ab7b04a5a285ed2211b7a11%2Fdocs%2Fexamples%2Fexamples.html%23L303-L352&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+                </section>
+
+                <hr class="my-1" />
+                <div class="bottom-nav">
+                    <a href="./alerts.html" class="btn"><i class="fas fa-chevron-left"></i> Avatars</a>
+                    <a href="./buttons.html" class="btn">Buttons <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
