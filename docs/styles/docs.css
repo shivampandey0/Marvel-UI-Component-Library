@@ -30,7 +30,7 @@ body {
 
 .doc-content {
   min-width: 0;
-  max-width: 100%;
+  width: 100%;
   padding: 0 var(--size-4);
 }
 
