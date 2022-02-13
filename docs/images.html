@@ -1,124 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://marvel-ui.vercel.app/css/marvel-ui.css" />
+    <link
+      rel="stylesheet"
+      href="https://marvel-ui.vercel.app/css/marvel-ui.css"
+    />
     <link rel="stylesheet" href="./styles/docs.css" />
     <title>Images | Marvel UI</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header flex-row px-1 align-cntr">
-        <h2 class="grow-1">
-            <a class="nav-logo" href="../index.html">Marvel UI</a>
-        </h2>
-        <button class="btn hamburger-menu">
-            <i class="fas fa-bars icon"></i>
+      <h2 class="grow-1">
+        <a class="nav-logo" href="../index.html">Marvel UI</a>
+      </h2>
+      <button class="btn hamburger-menu">
+        <i class="fas fa-bars icon"></i>
+      </button>
+      <nav class="nav mobile-nav">
+        <button class="btn nav-close-btn">
+          <i class="fas fa-2x fa-times"></i>
         </button>
-        <nav class="nav mobile-nav">
-            <button class="btn nav-close-btn">
-                <i class="fas fa-2x fa-times"></i>
-            </button>
-            <ul class="menu">
-                <a href="../index.html" class="btn btn-link">Home</a>
-                <a href="./get-started.html" class="btn btn-link active">Docs</a>
-                <a href="https://github.com/shivampandey0/Marvel-UI-Component-Library" target="_blank"
-                    class="btn btn-link">Contribute <i class="fab fa-github"></i></a>
-            </ul>
-        </nav>
+        <ul class="menu">
+          <a href="../index.html" class="btn btn-link">Home</a>
+          <a href="./get-started.html" class="btn btn-link active">Docs</a>
+          <a
+            href="https://github.com/shivampandey0/Marvel-UI-Component-Library"
+            target="_blank"
+            class="btn btn-link"
+            >Contribute <i class="fab fa-github"></i
+          ></a>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="py-1 mobile-menu">
-            Menu <i class="fa-solid fa-angle-up"></i>
-        </div>
-        <section class="doc-container">
-            <aside class="drawer">
-                <h3>Get Started</h3>
-                <ul class="drawer-list">
-                    <li><a href="./get-started.html">Installation</a></li>
-                </ul>
-                <h3>Components</h3>
-                <ul class="drawer-list">
-                    <li><a href="./alerts.html">Alerts</a></li>
-                    <li><a href="./avatars.html">Avatars</a></li>
-                    <li><a href="./badges.html">Badges</a></li>
-                    <li><a href="./buttons.html">Buttons</a></li>
-                    <li><a href="./cards.html">Cards</a></li>
-                    <li><a href="./inputs.html">Input</a></li>
-                    <li><a class="drawer-active" href="./images.html">Images</a></li>
-                    <li><a href="./typography.html">Typography</a></li>
-                </ul>
-            </aside>
-            <div class="doc-content">
-                <h2>Images</h2>
-                <hr class="my-1" />
-                <h2>Introduction</h2>
-                <div class="my-1">
+      <div class="py-1 mobile-menu">
+        Menu <i class="fa-solid fa-angle-up"></i>
+      </div>
+      <section class="doc-container">
+        <aside class="drawer">
+          <h3>Get Started</h3>
+          <ul class="drawer-list">
+            <li><a href="./get-started.html">Installation</a></li>
+          </ul>
+          <h3>Components</h3>
+          <ul class="drawer-list">
+            <li><a href="./alerts.html">Alerts</a></li>
+            <li><a href="./avatars.html">Avatars</a></li>
+            <li><a href="./badges.html">Badges</a></li>
+            <li><a href="./buttons.html">Buttons</a></li>
+            <li><a href="./cards.html">Cards</a></li>
+            <li><a href="./inputs.html">Input</a></li>
+            <li><a class="drawer-active" href="./images.html">Images</a></li>
+            <li><a href="./typography.html">Typography</a></li>
+            <li><a href="./navbar.html">Navbar</a></li>
+            <li><a href="./list.html">List</a></li>
+            <li><a href="./ratings.html">Ratings</a></li>
+          </ul>
+        </aside>
+        <div class="doc-content">
+          <h2>Images</h2>
+          <hr class="my-1" />
+          <h2>Introduction</h2>
+          <div class="my-1">
+            <p>Images are the heart and soul of a website.</p>
+            <p>
+              Without them, websites would become one large collection of text.
+              We allow you to style your images the way you'd like,
+            </p>
+          </div>
 
-                    <p>
-                        Images are the heart and soul of a website.
-                    </p>
-                    <p>Without them, websites would become one large collection of text. We allow you to style your
-                        images the way you'd like,</p>
-                </div>
+          <h2 class="py-1">Responsive Image</h2>
 
-                <h2 class="py-1">Responsive Image</h2>
+          <div class="my-1">
+            <p>Resize your browser window, to see its responsiveness.</p>
+          </div>
 
-                <div class="my-1">
-                    <p>
-                        Resize your browser window, to see its responsiveness.
-                    </p>
-
-                </div>
-
-                <section class="example flex-column gap-1">
-                    <div>
-
-                        <img class="img-responsive" src="./assets/nike.jpeg" alt="Nike" />
-                    </div>
-
-                    <h4>Code:</h4>
-                    <code>
-            <script
-                src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2Fc489205a3a9e70fd57359bc6f2497f54447b3e38%2Fdocs%2Fexamples%2Fexamples.html%23L363&style=github&showBorder=on&showCopy=on"></script>
-            </code>
-                </section>
-
-                <h2 class="py-1">Round Image</h2>
-
-                <div class="my-1">
-                    <p>
-                        To ensure your image is round, use the <span class="highlight">img-rounded</span> class in the
-                        img element.
-                    </p>
-
-                </div>
-
-                <section class="example flex-column gap-1">
-                    <div class="flex-row flex-center">
-                        <img class="img-rounded img-responsive" src="https://i.pravatar.cc/500" alt="User" />
-                    </div>
-
-                    <h4>Code:</h4>
-                    <code>
-                            <script
-                                src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2Fc489205a3a9e70fd57359bc6f2497f54447b3e38%2Fdocs%2Fexamples%2Fexamples.html%23L366-L370&style=github&showBorder=on&showCopy=on"></script>
-                            </code>
-                </section>
-
-                <hr class="my-1" />
-                <div class="bottom-nav">
-                    <a href="./inputs.html" class="btn"><i class="fas fa-chevron-left"></i> Input</a>
-                    <a href="./typography.html" class="btn">Typography <i class="fas fa-chevron-right"></i></a>
-                </div>
+          <section class="example flex-column gap-1">
+            <div>
+              <img class="img-responsive" src="./assets/nike.jpeg" alt="Nike" />
             </div>
-        </section>
+
+            <h4>Code:</h4>
+            <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2Fc489205a3a9e70fd57359bc6f2497f54447b3e38%2Fdocs%2Fexamples%2Fexamples.html%23L363&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+          </section>
+
+          <h2 class="py-1">Round Image</h2>
+
+          <div class="my-1">
+            <p>
+              To ensure your image is round, use the
+              <span class="highlight">img-rounded</span> class in the img
+              element.
+            </p>
+          </div>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-row flex-center">
+              <img
+                class="img-rounded img-responsive"
+                src="https://i.pravatar.cc/500"
+                alt="User"
+              />
+            </div>
+
+            <h4>Code:</h4>
+            <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2Fc489205a3a9e70fd57359bc6f2497f54447b3e38%2Fdocs%2Fexamples%2Fexamples.html%23L366-L370&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+          </section>
+
+          <hr class="my-1" />
+          <div class="bottom-nav">
+            <a href="./inputs.html" class="btn"
+              ><i class="fas fa-chevron-left"></i> Input</a
+            >
+            <a href="./typography.html" class="btn"
+              >Typography <i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./js/index.js"></script>
-</body>
-
+  </body>
 </html>
