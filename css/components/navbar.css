@@ -1,0 +1,131 @@
+/* Navbar wrapper */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--scale-2);
+  gap: var(--scale-1);
+  min-height: var(--scale-4);
+  background-color: var(--primary-light);
+}
+
+/* Navbar Branding */
+
+.nav-brand {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--primary-dark);
+  font-weight: var(--weight-bold);
+  font-size: calc(var(--scale-3) / 2);
+}
+
+.nav-logo {
+  white-space: nowrap;
+  color: inherit;
+  padding: var(--size-1) var(--size-2);
+}
+
+/* Search */
+
+.search {
+  width: 30%;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-sm);
+}
+
+.search .icon {
+  position: absolute;
+  padding: var(--size-2);
+  min-width: var(--size-12);
+  text-align: center;
+  color: var(--secondary-text);
+}
+
+.search-field {
+  width: 100%;
+  padding: var(--size-2);
+  padding-left: var(--size-12);
+  text-align: start;
+}
+
+/* Navigation menu */
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--scale-1);
+  padding: 0 var(--size-1);
+  align-items: center;
+  background-color: var(--primary-light);
+}
+
+.menu-icon {
+  color: var(--white);
+  font-size: var(--size-8);
+  background-color: transparent;
+}
+
+.hamburger-menu,
+.nav-close-btn {
+  margin-left: auto;
+  background-color: transparent;
+}
+
+.nav-close-btn {
+  position: absolute;
+  top: var(--size-4);
+  left: var(--size-4);
+}
+
+.hamburger-menu.btn {
+  color: inherit;
+  font-size: inherit;
+  padding: var(--size-2);
+}
+
+@media screen and (min-width: 769px) {
+  .hamburger-menu,
+  .nav-close-btn {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-nav {
+    width: 0;
+    display: block;
+    z-index: var(--z-5);
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: max-content;
+    overflow: hidden;
+    background-color: var(--primary-light);
+  }
+
+  .navbar {
+    padding: 0 var(--scale-1);
+  }
+  .nav-brand {
+    flex-grow: 0;
+  }
+
+  .menu {
+    gap: 1rem;
+    margin: var(--size-20);
+    flex-direction: column;
+    background-color: var(--primary-light);
+  }
+  .menu > * {
+    width: 100%;
+  }
+}
