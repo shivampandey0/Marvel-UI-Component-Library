@@ -1,314 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://marvel-ui.vercel.app/css/marvel-ui.css" />
+    <link rel="stylesheet" href="../css/marvel-ui.css" />
     <link rel="stylesheet" href="./styles/docs.css" />
     <title>Cards | Marvel UI</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header flex-row px-1 align-cntr">
-        <h2 class="grow-1">
-            <a class="nav-logo" href="../index.html">Marvel UI</a>
-        </h2>
-        <button class="btn hamburger-menu">
-            <i class="fas fa-bars icon"></i>
+      <h2 class="grow-1">
+        <a class="nav-logo" href="../index.html">Marvel UI</a>
+      </h2>
+      <button class="btn hamburger-menu">
+        <i class="fas fa-bars icon"></i>
+      </button>
+      <nav class="nav mobile-nav">
+        <button class="btn nav-close-btn">
+          <i class="fas fa-2x fa-times"></i>
         </button>
-        <nav class="nav mobile-nav">
-            <button class="btn nav-close-btn">
-                <i class="fas fa-2x fa-times"></i>
-            </button>
-            <ul class="menu">
-                <a href="../index.html" class="btn btn-link">Home</a>
-                <a href="./get-started.html" class="btn btn-link active">Docs</a>
-                <a href="https://github.com/shivampandey0/Marvel-UI-Component-Library" target="_blank"
-                    class="btn btn-link">Contribute <i class="fab fa-github"></i></a>
-            </ul>
-        </nav>
+        <ul class="menu">
+          <a href="../index.html" class="btn btn-link">Home</a>
+          <a href="./get-started.html" class="btn btn-link active">Docs</a>
+          <a
+            href="https://github.com/shivampandey0/Marvel-UI-Component-Library"
+            target="_blank"
+            class="btn btn-link"
+            >Contribute <i class="fab fa-github"></i
+          ></a>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="py-1 mobile-menu">
-            Menu <i class="fa-solid fa-angle-up"></i>
-        </div>
-        <section class="doc-container">
-            <aside class="drawer">
-                <h3>Get Started</h3>
-                <ul class="drawer-list">
-                    <li><a href="./get-started.html">Installation</a></li>
-                </ul>
-                <h3>Components</h3>
-                <ul class="drawer-list">
-                    <li><a href="./alerts.html">Alerts</a></li>
-                    <li><a href="./avatars.html">Avatars</a></li>
-                    <li><a href="./badges.html">Badges</a></li>
-                    <li><a href="./buttons.html">Buttons</a></li>
-                    <li><a class="drawer-active" href="./cards.html">Cards</a></li>
-                    <li><a href="./inputs.html">Input</a></li>
-                    <li><a href="./images.html">Images</a></li>
-                    <li><a href="./typography.html">Typography</a></li>
-                </ul>
-            </aside>
-            <div class="doc-content">
-                <h2>Cards</h2>
-                <hr class="my-1" />
-                <h2>Introduction</h2>
-                <div class="my-1">
-                    <p>
-                        Cards are primarily used to convey short information to users.
-                    </p>
-                    <p>
-                        Mostly seen on E-Commerce websites, cards are used to convery
-                        product illustration, alongwith information and also come with
-                        multiple action buttons.
-                    </p>
-                    <p>
-                        The cards provided by Marvel UI are
-                        <span class="highlight">384 px</span> wide, being the most common
-                        size widely used across many platforms. But that can easily be
-                        overridden.
-                    </p>
-                    <p>
-                        <span class="highlight">card-badge</span> and <span class="highlight">card-icons</span> are
-                        available to use for all the cards and can be positioned on both the top corners with classes
-                        <span class="highlight">top-left</span> and <span class="highlight">top-right</span>
-                    </p>
-                    <p>
-                        Icons are imported and used from
-                        <span class="highlight">FontAwesome</span> .
-                    </p>
+      <div class="py-1 mobile-menu">
+        Menu <i class="fa-solid fa-angle-up"></i>
+      </div>
+      <section class="doc-container">
+        <aside class="drawer">
+          <h3>Get Started</h3>
+          <ul class="drawer-list">
+            <li><a href="./get-started.html">Installation</a></li>
+          </ul>
+          <h3>Components</h3>
+          <ul class="drawer-list">
+            <li><a href="./alerts.html">Alerts</a></li>
+            <li><a href="./avatars.html">Avatars</a></li>
+            <li><a href="./badges.html">Badges</a></li>
+            <li><a href="./buttons.html">Buttons</a></li>
+            <li><a class="drawer-active" href="./cards.html">Cards</a></li>
+            <li><a href="./inputs.html">Input</a></li>
+            <li><a href="./images.html">Images</a></li>
+            <li><a href="./typography.html">Typography</a></li>
+          </ul>
+        </aside>
+        <div class="doc-content">
+          <h2>Cards</h2>
+          <hr class="my-1" />
+          <h2>Introduction</h2>
+          <div class="my-1">
+            <p>
+              Cards are primarily used to convey short information to users.
+            </p>
+            <p>
+              Mostly seen on E-Commerce websites, cards are used to convery
+              product illustration, alongwith information and also come with
+              multiple action buttons.
+            </p>
+            <p>
+              The cards provided by Marvel UI are
+              <span class="highlight">384 px</span> wide, being the most common
+              size widely used across many platforms. But that can easily be
+              overridden.
+            </p>
+            <p>
+              <span class="highlight">card-badge</span> and
+              <span class="highlight">card-icons</span> are available to use for
+              all the cards and can be positioned on both the top corners with
+              classes <span class="highlight">top-left</span> and
+              <span class="highlight">top-right</span>
+            </p>
+            <p>
+              Icons are imported and used from
+              <span class="highlight">FontAwesome</span> .
+            </p>
+          </div>
+
+          <h2 class="py-1">Text-only Card</h2>
+
+          <div>
+            <p>Text cards simply consist of a title and a description.</p>
+            <p>
+              Such cards are more widely used for sharing nuggets of information
+              in a small space
+            </p>
+            <p>
+              <span class="highlight">card-elevation</span> class can be used on
+              any card to give it a shadow.
+            </p>
+          </div>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-row flex-center">
+              <div class="card card-elevation">
+                <div class="card-body">
+                  <h3 class="card-title txt-bold">Ironman</h3>
                 </div>
-
-                <h2 class="py-1">Text-only Card</h2>
-
-                <div>
-                    <p>Text cards simply consist of a title and a description.</p>
-                    <p>
-                        Such cards are more widely used for sharing nuggets of information
-                        in a small space
-                    </p>
-                    <p>
-                        <span class="highlight">card-elevation</span> class can be used on
-                        any card to give it a shadow.
-                    </p>
+                <div class="card-content">
+                  <p class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem placeat distinctio exercitationem magnam doloribus!
+                    Dolorum delectus atque quas explicabo voluptatem soluta
+                    aliquam! Facilis officiis necessitatibus totam laudantium
+                    similique esse dolor.
+                  </p>
                 </div>
-
-                <section class="example flex-column gap-1">
-                    <div class="flex-row flex-center">
-                        <div class="card card-elevation">
-                            <div class="card-body">
-                                <h3 class="card-title txt-bold">Ironman</h3>
-                            </div>
-                            <div class="card-content">
-                                <p class="content">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Dolorem placeat distinctio exercitationem magnam doloribus!
-                                    Dolorum delectus atque quas explicabo voluptatem soluta
-                                    aliquam! Facilis officiis necessitatibus totam laudantium
-                                    similique esse dolor.
-                                </p>
-                            </div>
-                            <span class="badge badge-info card-badge top-right">New</span>
-                        </div>
-                    </div>
-                    <h4>Code:</h4>
-                    <code>
+                <span class="badge badge-info card-badge top-right">New</span>
+              </div>
+            </div>
+            <h4>Code:</h4>
+            <code>
               <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F5df2676d283ffd8b7ab7b04a5a285ed2211b7a11%2Fdocs%2Fexamples%2Fexamples.html%23L187-L200&style=github&showBorder=on&showCopy=on"></script>
             </code>
-                </section>
+          </section>
 
-                <!-- Vertical Card with badge and dismiss -->
+          <!-- Vertical Card with badge and dismiss -->
 
-                <h2 class="py-1">Vertical Card</h2>
+          <h2 class="py-1">Vertical Card</h2>
 
-                <div>
-                    <p>
-                        Vertical cards are the most common type of cards seen used across
-                        multiple platforms.
-                    </p>
-                    <p>
-                        Being vertical means you can fit all the required information
-                        without having to fight for space.
-                    </p>
+          <div>
+            <p>
+              Vertical cards are the most common type of cards seen used across
+              multiple platforms.
+            </p>
+            <p>
+              Being vertical means you can fit all the required information
+              without having to fight for space.
+            </p>
+          </div>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-row flex-center">
+              <div class="card">
+                <figure class="card-image">
+                  <img
+                    class="img-responsive"
+                    src="./assets/nike.jpeg"
+                    alt="nike"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h3 class="card-title txt-semibold">Nike Red</h3>
+                  <small class="card-subtitle txt-grey">Shoes</small>
                 </div>
-
-                <section class="example flex-column gap-1">
-                    <div class="flex-row flex-center">
-                        <div class="card">
-                            <figure class="card-image">
-                                <img class="img-responsive" src="./assets/nike.jpeg" alt="nike" />
-                            </figure>
-                            <div class="card-body">
-                                <h3 class="card-title txt-semibold">Nike Red</h3>
-                                <small class="card-subtitle txt-grey">Shoes</small>
-                            </div>
-                            <div class="card-content">
-                                <p class="content">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Perferendis quae itaque eligendi commodi nesciunt
-                                    aspernatur?
-                                </p>
-                            </div>
-                            <div class="card-price">
-                                <span class="h3 txt-bold">$399.00</span>
-                                <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
-                            </div>
-                            <div class="card-buttons flex-column gap-05">
-                                <button class="btn btn-primary">Add to cart</button>
-                                <button class="btn btn-outline">Buy Now</button>
-                            </div>
-                            <div class="card-icons top-right">
-                                <button><i class="fas fa-close icon"></i></button>
-                            </div>
-                            <span class="badge badge-info card-badge top-left">New</span>
-                        </div>
-                    </div>
-                    <h4>Code:</h4>
-                    <code>
+                <div class="card-content">
+                  <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis quae itaque eligendi commodi nesciunt
+                    aspernatur?
+                  </p>
+                </div>
+                <div class="card-price">
+                  <span class="h3 txt-bold">$399.00</span>
+                  <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+                </div>
+                <div class="card-buttons flex-column gap-05">
+                  <button class="btn btn-primary">Add to cart</button>
+                  <button class="btn btn-outline">Buy Now</button>
+                </div>
+                <div class="card-icons top-right">
+                  <button><i class="fas fa-close icon"></i></button>
+                </div>
+                <span class="badge badge-info card-badge top-left">New</span>
+              </div>
+            </div>
+            <h4>Code:</h4>
+            <code>
               <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F5df2676d283ffd8b7ab7b04a5a285ed2211b7a11%2Fdocs%2Fexamples%2Fexamples.html%23L203-L229&style=github&showBorder=on&showCopy=on"></script>
             </code>
-                </section>
+          </section>
 
-                <!-- Horizontal Card with dismiss -->
-                <h2 class="py-1">Horizontal Card</h2>
+          <!-- Horizontal Card with dismiss -->
+          <h2 class="py-1">Horizontal Card</h2>
 
-                <div>
-                    <p>
-                        Horizontal cards come to play primarily on mobiles or on websites
-                        where you'd like to place the card as discreetly yet still be
-                        visible to the user.
+          <div>
+            <p>
+              Horizontal cards come to play primarily on mobiles or on websites
+              where you'd like to place the card as discreetly yet still be
+              visible to the user.
+            </p>
+            <p>These cards can have a brief bio/description.</p>
+          </div>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-row flex-wrap flex-center gap-05">
+              <!-- Horizontal Card with content-->
+              <div class="card card-h">
+                <figure class="card-image">
+                  <img
+                    class="img-responsive"
+                    src="./assets/nike-transparent.png"
+                    alt="nike"
+                  />
+                </figure>
+                <div class="card-body">
+                  <div class="card-content">
+                    <h3 class="card-title txt-semibold">Nike Red</h3>
+                    <small class="card-subtitle txt-grey">Shoes</small>
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perferendis quae itaque eligendi commodi nesciunt
+                      aspernatur?
                     </p>
-                    <p>These cards can have a brief bio/description.</p>
+                  </div>
+                  <div class="card-price">
+                    <span class="h3 txt-bold">$399.00</span>
+                    <span class="h4 txt-light txt-striked txt-grey"
+                      >$599.00</span
+                    >
+                  </div>
+                  <div class="card-buttons">
+                    <button class="btn btn-primary btn-full">
+                      Add to cart
+                    </button>
+                  </div>
                 </div>
+                <div class="card-icons top-right">
+                  <button><i class="fas fa-close icon"></i></button>
+                </div>
+              </div>
+              <!-- Horizontal Card without text -->
 
-                <section class="example flex-column gap-1">
-                    <div class="flex-row flex-wrap flex-center gap-05">
-                        <!-- Horizontal Card with content-->
-                        <div class="card card-h">
-                            <figure class="card-image">
-                                <img class="img-responsive" src="./assets/nike-transparent.png" alt="nike" />
-                            </figure>
-                            <div class="card-body">
-                                <div class="card-content">
-                                    <h3 class="card-title txt-semibold">Nike Red</h3>
-                                    <small class="card-subtitle txt-grey">Shoes</small>
-                                    <p class="content">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Perferendis quae itaque eligendi commodi nesciunt
-                                        aspernatur?
-                                    </p>
-                                </div>
-                                <div class="card-price">
-                                    <span class="h3 txt-bold">$399.00</span>
-                                    <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
-                                </div>
-                                <div class="card-buttons">
-                                    <button class="btn btn-primary btn-full">
-                                        Add to cart
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-icons top-right">
-                                <button><i class="fas fa-close icon"></i></button>
-                            </div>
-                        </div>
-                        <!-- Horizontal Card without text -->
-
-                        <div class="card card-h">
-                            <figure class="card-image">
-                                <img class="img-responsive" src="./assets/nike-transparent.png" alt="nike" />
-                            </figure>
-                            <div class="card-body">
-                                <div class="card-content">
-                                    <h3 class="card-title txt-semibold">Nike Red</h3>
-                                    <small class="card-subtitle txt-grey">Shoes</small>
-                                </div>
-                                <div class="card-price">
-                                    <span class="h3 txt-bold">$399.00</span>
-                                    <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
-                                </div>
-                                <div class="card-buttons">
-                                    <button class="btn btn-primary btn-full">
-                                        Add to cart
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-icons top-right">
-                                <button><i class="fas fa-close icon"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <h4>Code:</h4>
-                    <code>
+              <div class="card card-h">
+                <figure class="card-image">
+                  <img
+                    class="img-responsive"
+                    src="./assets/nike-transparent.png"
+                    alt="nike"
+                  />
+                </figure>
+                <div class="card-body">
+                  <div class="card-content">
+                    <h3 class="card-title txt-semibold">Nike Red</h3>
+                    <small class="card-subtitle txt-grey">Shoes</small>
+                  </div>
+                  <div class="card-price">
+                    <span class="h3 txt-bold">$399.00</span>
+                    <span class="h4 txt-light txt-striked txt-grey"
+                      >$599.00</span
+                    >
+                  </div>
+                  <div class="card-buttons">
+                    <button class="btn btn-primary btn-full">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+                <div class="card-icons top-right">
+                  <button><i class="fas fa-close icon"></i></button>
+                </div>
+              </div>
+            </div>
+            <h4>Code:</h4>
+            <code>
               <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F5df2676d283ffd8b7ab7b04a5a285ed2211b7a11%2Fdocs%2Fexamples%2Fexamples.html%23L231-L260&style=github&showBorder=on&showCopy=on"></script>
             </code>
-                </section>
+          </section>
 
-                <!-- Overlay card -->
+          <!-- Overlay card -->
 
-                <h2 class="py-1">Card with Text Overlay</h2>
+          <h2 class="py-1">Card with Text Overlay</h2>
 
-                <div>
-                    <p>
-                        You need to wrap element that need to be overlay and on which it
-                        is to be overlayed in a single div. Use class names as per below
-                        code.
+          <div>
+            <p>
+              You need to wrap element that need to be overlay and on which it
+              is to be overlayed in a single div. Use class names as per below
+              code.
+            </p>
+          </div>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-row flex-center">
+              <div class="card">
+                <div class="card-overlay">
+                  <figure class="card-image">
+                    <img
+                      class="img-responsive"
+                      src="./assets/nike.jpeg"
+                      alt="nike"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h3 class="card-title txt-semibold">Nike Red</h3>
+                    <small class="card-subtitle txt-grey">Shoes</small>
+                  </div>
+                  <div class="card-content">
+                    <p class="content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perferendis quae itaque eligendi commodi nesciunt
+                      aspernatur?
                     </p>
+                  </div>
+                  <div class="card-price">
+                    <span class="h3 txt-bold">$399.00</span>
+                    <span class="h4 txt-light txt-striked txt-grey"
+                      >$599.00</span
+                    >
+                  </div>
+                  <div class="card-buttons flex-column gap-05">
+                    <button class="btn btn-primary">Add to cart</button>
+                    <button class="btn btn-outline">Buy Now</button>
+                  </div>
+                  <div class="card-icons top-right">
+                    <button><i class="fas fa-close icon"></i></button>
+                  </div>
+                  <span class="badge badge-info card-badge top-left">New</span>
                 </div>
+                <div class="overlay-text">Out of Stock</div>
+              </div>
+            </div>
 
-                <section class="example flex-column gap-1">
-                    <div class="flex-row flex-center">
-                        <div class="card">
-                            <div class="card-overlay">
-                                <figure class="card-image">
-                                    <img class="img-responsive" src="./assets/nike.jpeg" alt="nike" />
-                                </figure>
-                                <div class="card-body">
-                                    <h3 class="card-title txt-semibold">Nike Red</h3>
-                                    <small class="card-subtitle txt-grey">Shoes</small>
-                                </div>
-                                <div class="card-content">
-                                    <p class="content">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Perferendis quae itaque eligendi commodi nesciunt
-                                        aspernatur?
-                                    </p>
-                                </div>
-                                <div class="card-price">
-                                    <span class="h3 txt-bold">$399.00</span>
-                                    <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
-                                </div>
-                                <div class="card-buttons flex-column gap-05">
-                                    <button class="btn btn-primary">Add to cart</button>
-                                    <button class="btn btn-outline">Buy Now</button>
-                                </div>
-                                <div class="card-icons top-right">
-                                    <button><i class="fas fa-close icon"></i></button>
-                                </div>
-                                <span class="badge badge-info card-badge top-left">New</span>
-                            </div>
-                            <div class="overlay-text">Out of Stock</div>
-                        </div>
-                    </div>
-
-                    <h4>Code:</h4>
-                    <code>
+            <h4>Code:</h4>
+            <code>
               <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F5df2676d283ffd8b7ab7b04a5a285ed2211b7a11%2Fdocs%2Fexamples%2Fexamples.html%23L262-L297&style=github&showBorder=on&showCopy=on"></script>
             </code>
-                </section>
+          </section>
 
-                <hr class="my-1" />
-                <div class="bottom-nav">
-                    <a href="./buttons.html" class="btn"><i class="fas fa-chevron-left"></i> Buttons</a>
-                    <a href="./inputs.html" class="btn">Inputs <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-        </section>
+          <hr class="my-1" />
+          <div class="bottom-nav">
+            <a href="./buttons.html" class="btn"
+              ><i class="fas fa-chevron-left"></i> Buttons</a
+            >
+            <a href="./inputs.html" class="btn"
+              >Inputs <i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
