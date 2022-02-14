@@ -4,33 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./assets/favicon.ico" />
+    <!-- Marvel UI -->
     <link rel="stylesheet" href="../css/marvel-ui.css" />
+    <!-- Docs Style -->
     <link rel="stylesheet" href="./styles/docs.css" />
     <title>Get Started | Marvel UI</title>
   </head>
 
   <body>
-    <header class="header flex-row px-1 align-cntr">
-      <h2 class="grow-1">
-        <a class="nav-logo" href="../index.html">Marvel UI</a>
-      </h2>
-      <button class="btn hamburger-menu">
-        <i class="fas fa-bars icon"></i>
-      </button>
-      <nav class="nav mobile-nav">
-        <button class="btn nav-close-btn">
-          <i class="fas fa-2x fa-times"></i>
-        </button>
-        <ul class="menu">
-          <a href="../index.html" class="btn btn-link">Home</a>
-          <a href="./get-started.html" class="btn btn-link active">Docs</a>
-          <a
-            href="https://github.com/shivampandey0/Marvel-UI-Component-Library"
-            target="_blank"
-            class="btn btn-link"
-            >Contribute <i class="fab fa-github"></i
-          ></a>
-        </ul>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+          </button>
+          <a class="nav-logo" href="../index.html">Marvel UI</a>
+        </div>
+
+        <div class="nav mobile-nav">
+          <button class="btn nav-close-btn">
+            <i class="fas fa-2x fa-times"></i>
+          </button>
+          <ul class="menu">
+            <li>
+              <a href="../index.html" class="btn btn-primary">Home</a>
+            </li>
+            <li>
+              <a href="./docs/get-started.html" class="btn btn-primary active"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/shivampandey0/Marvel-UI-Component-Library"
+                target="_blank"
+                class="btn btn-primary"
+                >Contribute <i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -64,7 +79,7 @@
 
         <h2 class="py-1">Introduction</h2>
         <p class="my-1">
-          <span class="card-badge">Marvel UI</span> is an open source styling
+          <span class="highlight">Marvel UI</span> is an open source styling
           framework, which helps Developers to use best styles and components,
           by using pre-defined classnames. Marvel UI helps you to quickly build
           your Dream Project, by focusing much on Functionality, because we take
@@ -77,7 +92,7 @@
         <p>
           In order to introduce Marvel UI to your project, Copy the Link given
           below and paste it in the
-          <span class="card-badge">&lt;head> </span>tag of your html, above all
+          <span class="highlight">&lt;head> </span>tag of your html, above all
           other style sheets.
         </p>
 

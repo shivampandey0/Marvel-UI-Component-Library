@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/marvel-ui.css">
-    <link rel="stylesheet" href="./docs/styles/docs.css">
-    <script src="https://kit.fontawesome.com/0ae1aebe6f.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./docs/assets/favicon.ico" />
+    <!-- Marvel UI -->
+    <link rel="stylesheet" href="./css/marvel-ui.css" />
+    <!-- Docs Style -->
+    <link rel="stylesheet" href="./docs/styles/docs.css" />
     <title>Marvel UI</title>
-</head>
+  </head>
 
-<body>
-    <header class="header flex-row px-1 align-cntr ">
-        <h2 class="grow-1"><a class="nav-logo" href="./index.html">Marvel UI</a></h2>
-        <button class="btn hamburger-menu"><i class="fas fa-bars icon"></i></button>
-        <nav class="nav mobile-nav">
-            <button class="btn nav-close-btn"><i class="fas fa-2x fa-times"></i></button>
-            <ul class="menu">
-                <a href="./index.html" class="btn btn-link active">Home</a>
-                <a href="./docs/get-started.html" class="btn btn-link">Docs</a>
-                <a href="https://github.com/shivampandey0/Marvel-UI-Component-Library" target="_blank"
-                    class="btn btn-link">Contribute
-                    <i class="fab fa-github"></i></a>
-            </ul>
-        </nav>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+          </button>
+          <a class="nav-logo" href="../index.html">Marvel UI</a>
+        </div>
+
+        <div class="nav mobile-nav">
+          <button class="btn nav-close-btn">
+            <i class="fas fa-2x fa-times"></i>
+          </button>
+          <ul class="menu">
+            <li>
+              <a href="../index.html" class="btn btn-primary active">Home</a>
+            </li>
+            <li>
+              <a href="./docs/get-started.html" class="btn btn-primary">Docs</a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/shivampandey0/Marvel-UI-Component-Library"
+                target="_blank"
+                class="btn btn-primary"
+                >Contribute <i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <div class="flex-column flex-center gap-2 mxw-1200 m-auto">
-            <section class="hero">
-                <img class="img-responsive" src="./docs/assets/hero.svg" alt="hero">
-            </section>
+      <div class="flex-column flex-center gap-2 mxw-1200 m-auto">
+        <section class="hero">
+          <img class="img-responsive" src="./docs/assets/hero.svg" alt="hero" />
+        </section>
 
-            <section class="flex-column flex-center gap-2 px-1">
-                <h3 class="txt-center txt-xl">Build your <span class="card-badge">Marvelous</span> Web pages better and
-                    faster.
-                </h3>
-                <p class="txt-center txt-md">Marvel UI is a CSS library, integrated with pre-defined styled classes, and
-                    Utilites, for a quick
-                    creation of websites,
-                    with much focus on Flexibility.</p>
-            </section>
+        <section class="flex-column flex-center gap-2 px-1">
+          <h3 class="txt-center txt-xl">
+            Build your <span class="card-badge">Marvelous</span> Web pages
+            better and faster.
+          </h3>
+          <p class="txt-center txt-md">
+            Marvel UI is a CSS library, integrated with pre-defined styled
+            classes, and Utilites, for a quick creation of websites, with much
+            focus on Flexibility.
+          </p>
+        </section>
 
-            <a href="./docs/get-started.html" class="btn btn-primary">Get Started<i class="fas fa-arrow-right"></i></a>
-        </div>
+        <a href="./docs/get-started.html" class="btn btn-primary"
+          >Get Started<i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
     </main>
 
     <script src="./docs/js/index.js"></script>
-</body>
-
+  </body>
 </html>
