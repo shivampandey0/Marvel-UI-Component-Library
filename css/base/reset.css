@@ -38,11 +38,6 @@ textarea {
   border: 0;
 }
 
-/* List */
-ul {
-  list-style: none;
-}
-
 /* Box sizing */
 html {
   box-sizing: border-box;

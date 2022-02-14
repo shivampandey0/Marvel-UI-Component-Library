@@ -1,0 +1,38 @@
+/* Normal(Vertical) List */
+.mu-list {
+  border: 1px solid var(--border);
+  margin: var(--scale-05) 0;
+  list-style-type: none;
+}
+/* Horizontal List */
+.mu-list-h {
+  display: flex;
+  border: 1px solid var(--border);
+  margin: var(--scale-05) 0;
+  list-style-type: none;
+}
+/* Default list item */
+.list-item {
+  line-height: 1.5;
+  margin: 0;
+  padding: var(--scale-05) var(--scale-1);
+}
+/* Vertical list items */
+.mu-list > .list-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.mu-list .list-item:last-child {
+  border-bottom: none;
+}
+/* Horizontal list items */
+
+.mu-list-h > .list-item {
+  border-right: 1px solid var(--border);
+}
+
+.mu-list-h .list-item:last-child {
+  border-right: none;
+}
+
+/* Notification List */
