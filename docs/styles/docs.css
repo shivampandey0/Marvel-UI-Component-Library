@@ -10,6 +10,10 @@ body {
   font-family: var(--roboto-family);
 }
 
+header {
+  border-bottom: 1px solid var(--primary-dark);
+}
+
 .example {
   margin: var(--scale-1);
   padding: var(--scale-1);
@@ -25,7 +29,6 @@ body {
   padding: var(--size-4);
   grid-template-columns: 1fr 4fr;
   justify-items: center;
-  
 }
 
 .doc-content {
@@ -78,6 +81,6 @@ body {
 }
 
 /* Class to hide any element */
-.hide{
+.hide {
   display: none;
 }

@@ -1,36 +1,8 @@
+@import "./padding.css";
+@import "./margin.css";
+
 .border{
   border: 1px solid var(--border);
-}
-
-/* margins */
-.m-auto {
-  margin: auto;
-}
-
-.mx-1 {
-  margin: 0 var(--scale-1);
-}
-
-.my-1 {
-  margin: var(--scale-1) 0;
-}
-
-.m-xy-1 {
-  margin: var(--scale-1);
-}
-
-/* padding */
-
-.px-1 {
-  padding: 0 var(--scale-1);
-}
-
-.py-1 {
-  padding: var(--scale-1) 0;
-}
-
-.p-xy-1 {
-  padding: var(--scale-1);
 }
 
 /* font-weight */

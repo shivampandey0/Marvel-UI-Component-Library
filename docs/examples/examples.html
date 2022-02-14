@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://marvel-ui.vercel.app/css/marvel-ui.css"
-    />
+    /> -->
+    <link rel="stylesheet" href="../../css/marvel-ui.css" />
     <title>Examples | Marvel UI</title>
   </head>
 
   <body>
-    <section class="m-xy-1 p-xy-1 border">
+    <section class="mx-1 my-1 px-1 py-1 border">
       <div class="flex-column gap-1">
         <!-- Simple Alerts -->
         <div class="alert alert-primary" role="alert">
@@ -76,7 +77,7 @@
     </section>
 
     <!-- Avatars -->
-    <section class="m-xy-1 p-xy-1 border">
+    <section class="mx-1 my-1 px-1 py-1 border">
       <!-- Image Avatar -->
       <div class="flex-row flex-center">
         <img
@@ -111,7 +112,7 @@
 
     <!-- Badges -->
 
-    <section class="m-xy-1 p-xy-1 border">
+    <section class="mx-1 my-1 px-1 py-1 border">
       <!-- Badge on Avatar -->
       <div class="flex-row flex-center gap-1">
         <div class="badge-wrapper">
@@ -167,7 +168,7 @@
     </section>
 
     <!-- Buttons -->
-    <section class="m-xy-1 p-xy-1 border">
+    <section class="mx-1 my-1 px-1 py-1 border">
       <div class="flex-column gap-1 flex-center">
         <button class="btn">Default</button>
         <button class="btn btn-primary">Primary</button>
@@ -181,7 +182,7 @@
       </div>
     </section>
 
-    <section class="m-xy-1 p-xy-1 border">
+    <section class="mx-1 my-1 px-1 py-1 border">
       <div class="flex-column gap-1 flex-center">
         <!-- Text only card -->
         <div class="card card-elevation">
@@ -298,7 +299,7 @@
     </section>
 
     <!-- Text Inputs -->
-    <section class="m-xy-1 p-xy-1 border">
+    <section class="mx-1 my-1 px-1 py-1 border">
       <div class="m-auto">
         <form class="flex-column align-cntr" action="#">
           <div class="input-group">
@@ -358,7 +359,7 @@
     </section>
 
     <!-- Images -->
-    <section class="m-xy-1 p-xy-1 border">
+    <section class="mx-1 my-1 px-1 py-1 border">
       <div class="flex-row gap-1">
         <img class="img-responsive" src="../assets/nike.jpeg" alt="Nike" />
       </div>
@@ -372,8 +373,8 @@
     </section>
 
     <!-- Typography -->
-    <section class="m-xy-1 p-xy-1 border">
-      <div class="m-xy-1 p-xy-1 border">
+    <section class="mx-1 my-1 px-1 py-1 border">
+      <div class="mx-1 my-1 px-1 py-1 border">
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
@@ -381,7 +382,7 @@
         <h5>Heading 5</h5>
       </div>
 
-      <div class="m-xy-1 p-xy-1 border">
+      <div class="mx-1 my-1 px-1 py-1 border">
         <p class="txt-xl">It's a X-Large Paragraph</p>
         <p class="txt-lg">It's a Large Paragraph</p>
         <p class="txt-md">It's a Medium Paragraph</p>
@@ -390,18 +391,67 @@
         <p class="txt-xs">It's a X-Small Paragraph</p>
       </div>
 
-      <div class="m-xy-1 p-xy-1 border">
+      <div class="mx-1 my-1 px-1 py-1 border">
         <p class="txt-primary">It's a Primary Text</p>
         <p class="txt-grey">It's a Grey Text</p>
         <p class="txt-underline">It's Underline Text</p>
         <p class="txt-striked">It's Striked Text</p>
       </div>
 
-      <div class="m-xy-1 p-xy-1 border">
+      <div class="mx-1 my-1 px-1 py-1 border">
         <p class="txt-start">Text aligned start</p>
         <p class="txt-center">Text aligned center</p>
         <p class="txt-end">Text aligned end</p>
       </div>
     </section>
+    <!-- Navbar -->
+    <section class="mx-1 my-1 px-1 py-1 border">
+      <nav class="navbar" role="navigation" aria-label="navigation">
+        <div class="nav-brand">
+          <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+          </button>
+          <a href="#" class="nav-logo">MARVEL UI</a>
+        </div>
+
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass icon"></i>
+          <input
+            class="search-field"
+            type="text"
+            placeholder="Search..."
+            aria-label="Search Products"
+          />
+        </div>
+
+        <div class="nav mobile-nav">
+          <button class="btn nav-close-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <ul class="menu">
+            <li>
+              <a href="#" class="btn btn-primary">Login</a>
+            </li>
+            <li>
+              <a href="#" class="wishlist">
+                <div class="badge-wrapper">
+                  <i class="fas fa-heart menu-icon"></i>
+                  <span class="badge badge-info">0</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cart">
+                <div class="badge-wrapper">
+                  <i class="fas fa-shopping-cart menu-icon"></i>
+                  <span class="badge badge-info">0</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <script src="../js/index.js"></script>
   </body>
 </html>

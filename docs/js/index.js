@@ -21,10 +21,10 @@ mobileMenu.addEventListener('click',() => {
     isMobile = !isMobile;
     if (isMobile) {
         drawer.classList.add("open-drawer");
-        mobileMenu.innerHTML = ` Menu <i class="fa-solid fa-angle-down"></i>`;
+        mobileMenu.innerHTML = ` Menu <i class="fa-solid fa-angle-up"></i>`;
     }else{
         drawer.classList.remove("open-drawer");
-        mobileMenu.innerHTML = ` Menu <i class="fa-solid fa-angle-up"></i>`;
+        mobileMenu.innerHTML = ` Menu <i class="fa-solid fa-angle-down"></i>`;
     }
 })
 
