@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/marvel-ui.css" />
+    <link rel="stylesheet" href="./styles/docs.css" />
+    <title>Typography | Marvel UI</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+          </button>
+          <a class="nav-logo" href="../index.html">Marvel UI</a>
+        </div>
+
+        <div class="nav mobile-nav">
+          <button class="btn nav-close-btn">
+            <i class="fas fa-2x fa-times"></i>
+          </button>
+          <ul class="menu">
+            <li>
+              <a href="../index.html" class="btn btn-primary">Home</a>
+            </li>
+            <li>
+              <a href="./get-started.html" class="btn btn-primary active"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/shivampandey0/Marvel-UI-Component-Library"
+                target="_blank"
+                class="btn btn-primary"
+                >Contribute <i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="py-1 mobile-menu">
+        Menu <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <section class="doc-container">
+        <aside class="drawer">
+          <h3>Get Started</h3>
+          <ul class="drawer-list">
+            <li><a href="./get-started.html">Installation</a></li>
+          </ul>
+          <h3>Components</h3>
+          <ul class="drawer-list">
+            <li><a href="./alerts.html">Alerts</a></li>
+            <li><a href="./avatars.html">Avatars</a></li>
+            <li><a href="./badges.html">Badges</a></li>
+            <li><a href="./buttons.html">Buttons</a></li>
+            <li><a href="./cards.html">Cards</a></li>
+            <li><a href="./inputs.html">Input</a></li>
+            <li><a href="./images.html">Images</a></li>
+            <li><a href="./typography.html">Typography</a></li>
+            <li><a class="drawer-active" href="./navbar.html">Navbar</a></li>
+            <li><a href="./list.html">List</a></li>
+            <li><a href="./ratings.html">Ratings</a></li>
+          </ul>
+        </aside>
+        <div class="doc-content">
+          <h2>Navigation</h2>
+          <hr class="my-1" />
+          <h2>Introduction</h2>
+          <div class="my-1">
+            <p>
+              Navigation is necessary in ensuring that your website is
+              accessible and usable. Good navigation will allow visitors to
+              search your site for longer, giving them confidence in where they
+              are and what they can receive from your website. Navigation allows
+              visitors to search with ease. Hydrogen provides reponsive
+              navigation that you can use in your e-commerce website.
+            </p>
+          </div>
+
+          <h2 class="py-1">Simple Navigation</h2>
+
+          <div class="my-1">
+            <p></p>
+          </div>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-col p-xy-1">
+              <nav class="navbar" role="navigation" aria-label="navigation">
+                <div class="nav-brand">
+                  <button class="btn hamburger-menu">
+                    <i class="fas fa-bars icon"></i>
+                  </button>
+                  <a href="#" class="nav-logo">MARVEL UI</a>
+                </div>
+
+                <div class="search">
+                  <i class="fa-solid fa-magnifying-glass icon"></i>
+                  <input
+                    class="search-field"
+                    type="text"
+                    placeholder="Search..."
+                    aria-label="Search Products"
+                  />
+                </div>
+
+                <div class="nav mobile-nav">
+                  <button class="btn nav-close-btn">
+                    <i class="fas fa-arrow-left"></i>
+                  </button>
+                  <ul class="menu">
+                    <li>
+                      <a href="#" class="btn btn-primary">Login</a>
+                    </li>
+                    <li>
+                      <a href="#" class="wishlist">
+                        <div class="badge-wrapper">
+                          <i class="fas fa-heart menu-icon"></i>
+                          <span class="badge badge-info">0</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="cart">
+                        <div class="badge-wrapper">
+                          <i class="fas fa-shopping-cart menu-icon"></i>
+                          <span class="badge badge-info">0</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+            <h4>Code:</h4>
+            <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F3dfb0d7ebba580ed9402b1b1408ce4c86fc15227%2Fdocs%2Fexamples%2Fexamples.html%23L409-L453&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+          </section>
+
+          <hr class="my-1" />
+          <div class="bottom-nav">
+            <a href="./typography.html" class="btn"
+              ><i class="fas fa-chevron-left"></i> Typography</a
+            >
+            <a href="./list.html" class="btn"
+              >List <i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
