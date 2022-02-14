@@ -121,11 +121,12 @@
 
   .menu {
     gap: 1rem;
-    margin: var(--size-20);
+    margin: var(--size-20) var(--size-5);
     flex-direction: column;
     background-color: var(--primary-light);
   }
   .menu > * {
+    min-width: 50%;
     width: 100%;
   }
 }

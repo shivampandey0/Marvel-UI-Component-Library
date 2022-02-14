@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-@import "./navbar.css";
 @import "./drawer.css";
 @import "./variables.css";
 @import "./utilities.css";
@@ -40,8 +39,8 @@ header {
 /* bottom nav */
 .bottom-nav {
   display: flex;
-  margin: var(--scale-1) var(--scale-05);
   justify-content: space-between;
+  margin: var(--scale-1) var(--scale-05);
   font-weight: var(--weight-semibold);
 }
 

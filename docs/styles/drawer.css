@@ -40,8 +40,8 @@
   cursor: pointer;
   position: sticky;
   top: 0px;
-  z-index: var(--z-3);
-  padding-left: var(--scale-05);
+  z-index: var(--z-2);
+  padding: var(--size-3) var(--size-6);
   font-weight: var(--weight-semibold);
   background-color: var(--primary-light);
 }
@@ -60,7 +60,7 @@
   }
 
   .open-drawer {
-    top: 130px;
-    z-index: var(--z-5);
+    top: 100px;
+    z-index: var(--z-2);
   }
 }
