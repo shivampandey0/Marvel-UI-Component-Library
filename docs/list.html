@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./assets/favicon.ico" />
+    <!-- Marvel UI -->
+    <link rel="stylesheet" href="../css/marvel-ui.css" />
+    <!-- Docs Style -->
+    <link rel="stylesheet" href="./styles/docs.css" />
+    <title>Lists | Marvel UI</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+          </button>
+          <a class="nav-logo" href="../index.html">Marvel UI</a>
+        </div>
+
+        <div class="nav mobile-nav">
+          <button class="btn nav-close-btn">
+            <i class="fas fa-2x fa-times"></i>
+          </button>
+          <ul class="menu" type="disc">
+            <li>
+              <a href="../index.html" class="btn btn-primary">Home</a>
+            </li>
+            <li>
+              <a href="./get-started.html" class="btn btn-primary active"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/shivampandey0/Marvel-UI-Component-Library"
+                target="_blank"
+                class="btn btn-primary"
+                >Contribute <i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="py-1 mobile-menu">
+        Menu <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <section class="doc-container">
+        <aside class="drawer">
+          <h3>Get Started</h3>
+          <ul class="drawer-list">
+            <li><a href="./get-started.html">Installation</a></li>
+          </ul>
+          <h3>Components</h3>
+          <ul class="drawer-list">
+            <li><a href="./alerts.html">Alerts</a></li>
+            <li><a href="./avatars.html">Avatars</a></li>
+            <li><a href="./badges.html">Badges</a></li>
+            <li><a href="./buttons.html">Buttons</a></li>
+            <li><a href="./cards.html">Cards</a></li>
+            <li><a href="./inputs.html">Input</a></li>
+            <li><a href="./images.html">Images</a></li>
+            <li><a href="./typography.html">Typography</a></li>
+            <li><a href="./navigation.html">Navigation</a></li>
+            <li><a class="drawer-active" href="./list.html">List</a></li>
+            <li><a href="./ratings.html">Ratings</a></li>
+          </ul>
+        </aside>
+        <div class="doc-content">
+          <h2>Lists</h2>
+          <hr class="my-1" />
+          <h2>Introduction</h2>
+          <div class="my-1">
+            <p class="my-2">
+              Lists as they indicate themselves, are used to display list of
+              similar items. They can be normal lists with bullet points,
+              without any bullet points or stacked lists as seen in
+              notifications tabs across many social media apps.
+            </p>
+          </div>
+
+          <h2 class="py-1">Spaced(Normal) lists</h2>
+
+          <div class="my-1">
+            <p>
+              These lists are flexed verticaly horizontally and don't have
+              bullet points for list items. Use the class
+              <span class="highlight">mu-list</span> for vertical list and
+              <span class="highlight">mu-list-h</span> for the horizontal list
+              and <span class="highlight">list-item</span> on the list items
+            </p>
+          </div>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-column flex-center">
+              <ul class="mu-list">
+                <li class="list-item">List Item 1</li>
+                <li class="list-item">List Item 2</li>
+                <li class="list-item">List Item 3</li>
+              </ul>
+
+              <ul class="mu-list-h">
+                <li class="list-item">List Item 1</li>
+                <li class="list-item">List Item 2</li>
+                <li class="list-item">List Item 3</li>
+              </ul>
+            </div>
+
+            <h4>Code:</h4>
+            <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F57f6873e0c8dacddd3e10c09996fcea3019f95fc%2Fdocs%2Fexamples%2Fexamples.html%23L458-L468&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+          </section>
+
+          <!-- Stacked Lists -->
+
+          <h2 class="py-1">Stacked(Notification) list</h2>
+
+          <div class="my-1">
+            <p>
+              Best example of these lists is a notifications tab in any app. Use
+              the <span class="highlight">stacked-list-item</span> for List items.
+            </p>
+          </div>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-column flex-center">
+              <ul class="mu-list">
+                <li class="stacked-list-item">
+                  <img
+                    src="https://i.pravatar.cc/100"
+                    alt="User"
+                    class="avatar"
+                  />
+                  <a href="#">
+                    <div class="notif-content">
+                      <p class="notif-title">Notification Title</p>
+                      <p class="notif-info">
+                        Notification message to inform user
+                      </p>
+                      <p class="notif-time">an hour ago</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="stacked-list-item">
+                  <img
+                    src="https://i.pravatar.cc/100"
+                    alt="User"
+                    class="avatar"
+                  />
+                  <a href="#">
+                    <div class="notif-content">
+                      <p class="notif-title">Notification Title</p>
+                      <p class="notif-info">
+                        Notification message to inform user
+                      </p>
+                      <p class="notif-time">2 hour ago</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="stacked-list-item">
+                  <img
+                    src="https://i.pravatar.cc/100"
+                    alt="User"
+                    class="avatar"
+                  />
+                  <a href="#">
+                    <div class="notif-content">
+                      <p class="notif-title">Notification Title</p>
+                      <p class="notif-info">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quas officiis molestias sed atque laborum modi.
+                      </p>
+                      <p class="notif-time">2 hour ago</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <h4>Code:</h4>
+            <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F6019d007c0ddbbc412978cc0013c7ba238b7c0ec%2Fdocs%2Fexamples%2Fexamples.html%23L470-L504&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+          </section>
+
+          <hr class="my-1" />
+          <div class="bottom-nav">
+            <a href="./typography.html" class="btn"
+              ><i class="fas fa-chevron-left"></i> Typography</a
+            >
+            <a href="./ratings.html" class="btn"
+              >Ratings <i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
