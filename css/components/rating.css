@@ -1,0 +1,24 @@
+.rating {
+  display: inline-block;
+  font-size: calc(var(--scale-3) / 2);
+  color: var(--grey);
+}
+
+.rating-icon {
+  opacity: 0.8;
+}
+
+.rating-count {
+  font-size: inherit;
+}
+
+.rating-icon > .filled {
+  color: var(--warning);
+}
+
+/* unicode from font-awesome */
+
+.fas.half-filled::before {
+  content: "\f5c0";
+  color: var(--warning);
+}
