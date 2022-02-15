@@ -10,17 +10,20 @@
   display: flex;
 }
 /* Default list item */
-.list-item {
+.list-item,
+.stacked-list-item {
   line-height: 1.5;
   margin: 0;
   padding: var(--scale-05) var(--scale-1);
 }
 /* Vertical list items */
-.mu-list > .list-item {
+.mu-list > .list-item,
+.mu-list > .stacked-list-item {
   border-bottom: 1px solid var(--border);
 }
 
-.mu-list .list-item:last-child {
+.mu-list .list-item:last-child,
+.mu-list .stacked-list-item:last-child {
   border-bottom: none;
 }
 /* Horizontal list items */
