@@ -1,5 +1,6 @@
 /* Normal(Vertical) List */
-.mu-list {
+.mu-list,
+.mu-list-h {
   border: 1px solid var(--border);
   margin: var(--scale-05) 0;
   list-style-type: none;
@@ -7,9 +8,6 @@
 /* Horizontal List */
 .mu-list-h {
   display: flex;
-  border: 1px solid var(--border);
-  margin: var(--scale-05) 0;
-  list-style-type: none;
 }
 /* Default list item */
 .list-item {
@@ -35,4 +33,43 @@
   border-right: none;
 }
 
-/* Notification List */
+/* Stacked (Notification) List Item*/
+
+.stacked-list-item {
+  display: flex;
+  gap: var(--scale-05);
+  width: 100%;
+}
+
+.stacked-list-item > a {
+  width: inherit;
+}
+
+.stacked-list-item > .avatar {
+  width: var(--scale-4);
+  height: var(--scale-4);
+}
+
+.notif-content {
+  height: 100%;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-1);
+}
+
+.notif-title {
+  font-weight: var(--weight-bold);
+  font-size: var(--scale-1);
+}
+
+.notif-info,
+.notif-time {
+  opacity: 0.7;
+  font-weight: var(--weight-regular);
+}
+
+.notif-time {
+  font-size: calc(var(--scale-1) - 4px);
+  font-weight: var(--weight-semibold);
+}
