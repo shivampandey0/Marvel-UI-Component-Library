@@ -1,0 +1,78 @@
+/* Normal(Vertical) List */
+.mu-list,
+.mu-list-h {
+  border: 1px solid var(--border);
+  margin: var(--scale-05) 0;
+  list-style-type: none;
+}
+/* Horizontal List */
+.mu-list-h {
+  display: flex;
+}
+/* Default list item */
+.list-item,
+.stacked-list-item {
+  line-height: 1.5;
+  margin: 0;
+  padding: var(--scale-05) var(--scale-1);
+}
+/* Vertical list items */
+.mu-list > .list-item,
+.mu-list > .stacked-list-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.mu-list .list-item:last-child,
+.mu-list .stacked-list-item:last-child {
+  border-bottom: none;
+}
+/* Horizontal list items */
+
+.mu-list-h > .list-item {
+  border-right: 1px solid var(--border);
+}
+
+.mu-list-h .list-item:last-child {
+  border-right: none;
+}
+
+/* Stacked (Notification) List Item*/
+
+.stacked-list-item {
+  display: flex;
+  gap: var(--scale-05);
+  width: 100%;
+}
+
+.stacked-list-item > a {
+  width: inherit;
+}
+
+.stacked-list-item > .avatar {
+  width: var(--scale-4);
+  height: var(--scale-4);
+}
+
+.notif-content {
+  height: 100%;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-1);
+}
+
+.notif-title {
+  font-weight: var(--weight-bold);
+  font-size: var(--scale-1);
+}
+
+.notif-info,
+.notif-time {
+  opacity: 0.7;
+  font-weight: var(--weight-regular);
+}
+
+.notif-time {
+  font-size: calc(var(--scale-1) - 4px);
+  font-weight: var(--weight-semibold);
+}
