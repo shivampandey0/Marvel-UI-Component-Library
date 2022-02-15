@@ -76,4 +76,3 @@ Visit [docs](https://marvel-ui.vercel.app/docs/get-started.html) to learn more.
 
 ---
 
-![preview](./preview.gif)
