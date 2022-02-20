@@ -2,6 +2,7 @@
 
 @import "./base/base.css";
 @import "./utilities/utilities.css";
+@import "./layout/layout.css";
 @import "./helpers/helpers.css";
 @import "./layout/layout.css";
 @import "./elements/elements.css";

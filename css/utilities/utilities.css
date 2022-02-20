@@ -1,7 +1,8 @@
+@import "./gaps.css";
 @import "./padding.css";
 @import "./margin.css";
 
-.border{
+.border {
   border: 1px solid var(--border);
 }
 

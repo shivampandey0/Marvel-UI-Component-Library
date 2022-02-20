@@ -1,0 +1,15 @@
+.gap-05 {
+  gap: var(--scale-05);
+}
+
+.gap-1 {
+  gap: var(--scale-1);
+}
+
+.gap-2 {
+  gap: var(--scale-2);
+}
+
+.gap-3 {
+  gap: var(--scale-3);
+}
