@@ -1,13 +1,14 @@
+
 // Hamberger Menu
 const hamburger = document.querySelector(".hamburger-menu");
 const closenav = document.querySelector(".nav-close-btn");
 const mobNav = document.querySelector(".mobile-nav");
 
-hamburger.addEventListener('click', ()=> {
+hamburger.addEventListener('click', () => {
     mobNav.style.width = "60vw";
 });
 
-closenav.addEventListener('click', ()=> {
+closenav.addEventListener('click', () => {
     mobNav.style.width = null;
 });
 
@@ -17,12 +18,12 @@ let isMobile = false;
 const mobileMenu = document.querySelector(".mobile-menu");
 const drawer = document.querySelector(".drawer");
 
-mobileMenu.addEventListener('click',() => {
+mobileMenu.addEventListener('click', () => {
     isMobile = !isMobile;
     if (isMobile) {
         drawer.classList.add("open-drawer");
         mobileMenu.innerHTML = ` Menu <i class="fa-solid fa-angle-up"></i>`;
-    }else{
+    } else {
         drawer.classList.remove("open-drawer");
         mobileMenu.innerHTML = ` Menu <i class="fa-solid fa-angle-down"></i>`;
     }
@@ -33,7 +34,7 @@ mobileMenu.addEventListener('click',() => {
 const dismissElement = document.querySelectorAll(".delete");
 const resetAlerts = document.querySelector("#resetAlerts");
 
-dismissElement.forEach(e => {    
+dismissElement.forEach(e => {
     e.addEventListener("click", (e) => {
         let parentElement = e.target.parentElement.parentElement;
         console.log(parentElement);
@@ -42,12 +43,13 @@ dismissElement.forEach(e => {
     })
 });
 
-resetAlerts.addEventListener('click',()=>{
-  dismissElement.forEach(e => {
-      let parentElement = e.parentElement;
-      parentElement.style.display = "";
-      resetAlerts.classList.add("hide");
+resetAlerts.addEventListener('click', () => {
+    dismissElement.forEach(e => {
+        let parentElement = e.parentElement;
+        parentElement.style.display = "";
+        resetAlerts.classList.add("hide");
 
-  })
+    })
 });
+
 

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./assets/favicon.ico" />
+    <!-- Marvel UI -->
+    <link rel="stylesheet" href="../css/marvel-ui.css" />
+    <!-- Docs Style -->
+    <link rel="stylesheet" href="./styles/docs.css" />
+    <title>Snackbar | Marvel UI</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+          </button>
+          <a class="nav-logo" href="../index.html">Marvel UI</a>
+        </div>
+
+        <div class="nav mobile-nav">
+          <button class="btn nav-close-btn">
+            <i class="fas fa-2x fa-times"></i>
+          </button>
+          <ul class="menu">
+            <li>
+              <a href="../index.html" class="btn btn-primary">Home</a>
+            </li>
+            <li>
+              <a href="./get-started.html" class="btn btn-primary active"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/shivampandey0/Marvel-UI-Component-Library"
+                target="_blank"
+                class="btn btn-primary"
+                >Contribute <i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="py-1 mobile-menu">
+        Menu <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <section class="doc-container">
+        <aside class="drawer">
+          <h3>Get Started</h3>
+          <ul class="drawer-list">
+            <li><a href="./get-started.html">Installation</a></li>
+          </ul>
+          <h3>Components</h3>
+          <ul class="drawer-list">
+            <li><a href="./alerts.html">Alerts</a></li>
+            <li><a href="./avatars.html">Avatars</a></li>
+            <li><a href="./badges.html">Badges</a></li>
+            <li><a href="./buttons.html">Buttons</a></li>
+            <li><a href="./cards.html">Cards</a></li>
+            <li><a href="./inputs.html">Input</a></li>
+            <li><a href="./images.html">Images</a></li>
+            <li><a href="./typography.html">Typography</a></li>
+            <li><a href="./navigation.html">Navigation</a></li>
+            <li><a href="./list.html">List</a></li>
+            <li><a href="./ratings.html">Ratings</a></li>
+            <li><a href="./grid.html">Grid</a></li>
+            <li>
+              <a class="drawer-active" href="./snackbar.html">Snackbar</a>
+            </li>
+            <li><a href="./modal.html">Modal</a></li>
+            <li><a href="./slider.html">Range Slider</a></li>
+          </ul>
+        </aside>
+        <div class="doc-content">
+          <h2>Snackbar</h2>
+          <hr class="my-1" />
+          <h2>Introduction</h2>
+          <div class="my-1">
+            <p class="my-2">
+              Snackbars provide brief messages about various processes at the
+              bottom of the screen. These can range from simple messages to also
+              having trigger buttons. The snackbars provided by Marvel UI are
+              responsive as well.
+            </p>
+          </div>
+
+          <h2 class="py-1">Types of Snackbar</h2>
+
+          <div class="my-1">
+            <p class="my-2">
+              There are three types of snackbars available with
+              <strong>Marvel UI</strong>:
+              <span class="highlight">baseline</span> &
+              <span class="highlight">leading</span>
+              <span class="highlight">trailing</span>.
+            </p>
+            <p class="my-2">
+              By default, the snackbars live at the bottom of the website. Based
+              on your requirement, you may position the snackbar either at the
+              center, rightmost or on the leftmost side of the screen.
+            </p>
+          </div>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-row flex-center gap-1">
+              <button id="leading-snackbar-btn" class="btn btn-primary">
+                Leading
+              </button>
+              <button id="baseline-snackbar-btn" class="btn btn-primary">
+                Baseline
+              </button>
+              <button id="trailing-snackbar-btn" class="btn btn-primary">
+                Trailing
+              </button>
+            </div>
+
+            <!-- Baseline Snackbar -->
+            <div
+              id="baseline-snackbar"
+              style="display: none"
+              class="snackbar baseline-center"
+            >
+              <p>Can't send photo. Retry in 5 seconds.</p>
+              <div class="flex-row gap-05 align-cntr">
+                <button class="btn">RETRY</button>
+                <button class="btn snack-close">
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Leading Snackbar -->
+            <div
+              id="leading-snackbar"
+              style="display: none"
+              class="snackbar leading"
+            >
+              <p>Can't send photo. Retry in 5 seconds.</p>
+              <div class="flex-row gap-05 align-cntr">
+                <button class="btn">RETRY</button>
+                <button class="btn snack-close">
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Trailing Snackbar -->
+            <div
+              id="trailing-snackbar"
+              style="display: none"
+              class="snackbar trailing"
+            >
+              <p>Can't send photo. Retry in 5 seconds.</p>
+              <div class="flex-row gap-05 align-cntr">
+                <button class="btn">RETRY</button>
+                <button class="btn snack-close">
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <h4>Code(CSS):</h4>
+           <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F5303cef0ece849b6345755d9c206b99f560615c8%2Fdocs%2Fexamples%2Fexamples.html%23L560-L591&style=github&showBorder=on&showCopy=on"></script>
+           <h4>Code(JavaScript):</h4>
+           <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2Fbb1c244f2807ebc6953ee73640c19280de222431%2Fdocs%2Fjs%2Fsnackbar.js%23L2-L44&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+          </section>
+
+          <hr class="my-1" />
+          <div class="bottom-nav">
+            <a href="./grid.html" class="btn"
+              ><i class="fas fa-chevron-left"></i> Grid</a
+            >
+            <a href="./modal.html" class="btn">
+              Modal<i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/snackbar.js"></script>
+  </body>
+</html>
