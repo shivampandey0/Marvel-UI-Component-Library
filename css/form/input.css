@@ -1,4 +1,4 @@
-input:focus-visible {
+.input:focus-visible {
   outline-color: var(--primary);
 }
 
@@ -20,7 +20,8 @@ input:focus-visible {
   color: var(--danger);
 }
 
-.input {
+.input,
+.textarea {
   width: var(--size-full);
   line-height: 1.5;
   position: relative;
@@ -32,7 +33,7 @@ input:focus-visible {
 }
 
 .input:hover {
-  border-color: var(--grey);
+  border-color: var(--primary-light);
 }
 
 .input:focus-visible {

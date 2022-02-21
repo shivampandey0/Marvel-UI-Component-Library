@@ -75,10 +75,8 @@
 /* Card badge */
 .card-badge {
   border: 1px solid transparent;
-  color: var(--white);
   border-radius: var(--radius-sm);
   font-weight: var(--weight-extrabold);
-  background-color: var(--primary);
 }
 
 /* Positioning */
@@ -99,7 +97,7 @@
 .card-overlay {
   opacity: 0.4;
   pointer-events: none;
-  background-color: var(--grey);
+  background-color: var(--black);
 }
 
 .overlay-text {
@@ -111,6 +109,7 @@
   top: 50%;
   width: 100%;
   text-align: center;
+  cursor: not-allowed;
   color: var(--black);
   font-size: calc(var(--scale-3) / 2);
   font-weight: var(--weight-extrabold);
