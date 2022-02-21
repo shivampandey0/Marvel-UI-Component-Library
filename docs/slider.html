@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./assets/favicon.ico" />
+    <!-- Marvel UI -->
+    <link rel="stylesheet" href="../css/marvel-ui.css" />
+    <!-- Docs Style -->
+    <link rel="stylesheet" href="./styles/docs.css" />
+    <title>Range Slider | Marvel UI</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+          </button>
+          <a class="nav-logo" href="../index.html">Marvel UI</a>
+        </div>
+
+        <div class="nav mobile-nav">
+          <button class="btn nav-close-btn">
+            <i class="fas fa-2x fa-times"></i>
+          </button>
+          <ul class="menu">
+            <li>
+              <a href="../index.html" class="btn btn-primary">Home</a>
+            </li>
+            <li>
+              <a href="./get-started.html" class="btn btn-primary active"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/shivampandey0/Marvel-UI-Component-Library"
+                target="_blank"
+                class="btn btn-primary"
+                >Contribute <i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="py-1 mobile-menu">
+        Menu <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <section class="doc-container">
+        <aside class="drawer">
+          <h3>Get Started</h3>
+          <ul class="drawer-list">
+            <li><a href="./get-started.html">Installation</a></li>
+          </ul>
+          <h3>Components</h3>
+          <ul class="drawer-list">
+            <li><a href="./alerts.html">Alerts</a></li>
+            <li><a href="./avatars.html">Avatars</a></li>
+            <li><a href="./badges.html">Badges</a></li>
+            <li><a href="./buttons.html">Buttons</a></li>
+            <li><a href="./cards.html">Cards</a></li>
+            <li><a href="./inputs.html">Input</a></li>
+            <li><a href="./images.html">Images</a></li>
+            <li><a href="./typography.html">Typography</a></li>
+            <li><a href="./navigation.html">Navigation</a></li>
+            <li><a href="./list.html">List</a></li>
+            <li><a href="./ratings.html">Ratings</a></li>
+            <li><a href="./grid.html">Grid</a></li>
+            <li><a href="./snackbar.html">Snackbar</a></li>
+            <li><a href="./modal.html">Modal</a></li>
+            <li>
+              <a class="drawer-active" href="./slider.html">Range Slider</a>
+            </li>
+          </ul>
+        </aside>
+        <div class="doc-content">
+          <h2>Range Slider</h2>
+          <hr class="my-1" />
+          <h2>Introduction</h2>
+          <div class="my-1">
+            <p class="my-2">
+              Slider's are another way to get Users input on a property which
+              can take up a range of values. These are usually seen in
+              E-Commerce apps to filter products based on price ranges and in
+              Multimedia apps to control playback volume.
+            </p>
+          </div>
+
+          <h2 class="py-1">Range Slider</h2>
+          <div class="my-1">
+            <p>
+              Use the class <span class="highlight">.slider</span> to style the
+              slider according to your color palette.
+            </p>
+          </div>
+          <section class="example flex-column gap-1">
+            <div class="my-1">
+              <p>Price Range:</p>
+            </div>
+            <div class="flex-row flex-center">
+              <div class="slider-container">
+                <input
+                  type="range"
+                  min="0"
+                  max="10000"
+                  aria-label="input-range-slider"
+                  step="2500"
+                  value="2500"
+                  list="tickmarks"
+                  class="slider"
+                />
+                <datalist id="tickmarks">
+                  <option value="0"></option>
+                  <option value="2500"></option>
+                  <option value="5000"></option>
+                  <option value="7500"></option>
+                  <option value="10000"></option>
+                </datalist>
+              </div>
+            </div>
+
+            <h4>Code:</h4>
+            <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2Fb60040c91fab1c6809334513d56bf2a13d1e83a4%2Fdocs%2Fexamples%2Fexamples.html%23L669-L687&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+          </section>
+
+          <hr class="my-1" />
+          <div class="bottom-nav">
+            <a href="./modal.html" class="btn"
+              ><i class="fas fa-chevron-left"></i> Modal</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
