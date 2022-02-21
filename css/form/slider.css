@@ -1,0 +1,13 @@
+.slider-container {
+  padding: var(--size-2) 0;
+  width: 100%;
+}
+
+.slider {
+  accent-color: var(--primary);
+  display: block;
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  width: 100%;
+}
+

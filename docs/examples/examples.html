@@ -664,6 +664,29 @@
       </div>
     </section>
 
+    <!-- Slider -->
+    <section class="mx-1 my-1 px-1 py-1 border">
+      <div class="slider-container">
+        <input
+          type="range"
+          min="0"
+          max="10000"
+          aria-label="input-range-slider"
+          step="2500"
+          value="2500"
+          list="tickmarks"
+          class="slider"
+        />
+        <datalist id="tickmarks">
+          <option value="0"></option>
+          <option value="2500"></option>
+          <option value="5000"></option>
+          <option value="7500"></option>
+          <option value="10000"></option>
+        </datalist>
+      </div>
+    </section>
+
     <script src="../js/index.js"></script>
   </body>
 </html>
