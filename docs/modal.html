@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./assets/favicon.ico" />
+    <!-- Marvel UI -->
+    <link rel="stylesheet" href="../css/marvel-ui.css" />
+    <!-- Docs Style -->
+    <link rel="stylesheet" href="./styles/docs.css" />
+    <title>Modal | Marvel UI</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+          </button>
+          <a class="nav-logo" href="../index.html">Marvel UI</a>
+        </div>
+
+        <div class="nav mobile-nav">
+          <button class="btn nav-close-btn">
+            <i class="fas fa-2x fa-times"></i>
+          </button>
+          <ul class="menu">
+            <li>
+              <a href="../index.html" class="btn btn-primary">Home</a>
+            </li>
+            <li>
+              <a href="./get-started.html" class="btn btn-primary active"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/shivampandey0/Marvel-UI-Component-Library"
+                target="_blank"
+                class="btn btn-primary"
+                >Contribute <i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="py-1 mobile-menu">
+        Menu <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <section class="doc-container">
+        <aside class="drawer">
+          <h3>Get Started</h3>
+          <ul class="drawer-list">
+            <li><a href="./get-started.html">Installation</a></li>
+          </ul>
+          <h3>Components</h3>
+          <ul class="drawer-list">
+            <li><a href="./alerts.html">Alerts</a></li>
+            <li><a href="./avatars.html">Avatars</a></li>
+            <li><a href="./badges.html">Badges</a></li>
+            <li><a href="./buttons.html">Buttons</a></li>
+            <li><a href="./cards.html">Cards</a></li>
+            <li><a href="./inputs.html">Input</a></li>
+            <li><a href="./images.html">Images</a></li>
+            <li><a href="./typography.html">Typography</a></li>
+            <li><a href="./navigation.html">Navigation</a></li>
+            <li><a href="./list.html">List</a></li>
+            <li><a href="./ratings.html">Ratings</a></li>
+            <li><a href="./grid.html">Grid</a></li>
+            <li><a href="./snackbar.html">Snackbar</a></li>
+            <li><a class="drawer-active" href="./modal.html">Modal</a></li>
+            <li><a href="./slider.html">Range Slider</a></li>
+          </ul>
+        </aside>
+        <div class="doc-content">
+          <h2>Modal</h2>
+          <hr class="my-1" />
+          <h2>Introduction</h2>
+          <div class="my-1">
+            <p class="my-2">
+              A modal (also called a modal box) is a web page element that
+              displays in front of and deactivates all other page content. To
+              return to the main content, the user must engage with the modal by
+              completing an action or by closing it. Modals are often used to
+              direct user's attention to an important action or piece of
+              information on a website or application.
+            </p>
+          </div>
+
+          <h2 class="py-1">Alert Modal</h2>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-row flex-center">
+              <!-- Alert Modal-->
+              <div class="modal-container">
+                <h2 class="modal-title">Modal Title</h2>
+                <p class="modal-info">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Laudantium, ducimus odio. Labore dolorem quia quaerat quos
+                  consequuntur veritatis nihil tempore voluptatem
+                  exercitationem, sit, blanditiis alias itaque maiores corporis
+                  cupiditate ut?
+                </p>
+
+                <div class="modal-actions">
+                  <button class="btn btn-primary">Agree</button>
+                  <button class="btn btn-outline">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <h4>Code:</h4>
+            <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F147d9ecc9c18c97e67d17f53a17dd3aa889fe067%2Fdocs%2Fexamples%2Fexamples.html%23L597-L611&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+          </section>
+
+          <h2 class="py-1">Simple Modal</h2>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-row flex-center">
+              <!-- Simple Modal -->
+              <div class="modal-container">
+                <h2 class="modal-title">Modal Title</h2>
+
+                <div class="modal-options">
+                  <div class="modal-option">
+                    <i class="fas fa-user-circle"></i>
+                    <p>Item 1</p>
+                  </div>
+                  <div class="modal-option">
+                    <i class="fas fa-user-circle"></i>
+                    <p>Item 2</p>
+                  </div>
+                  <div class="modal-option">
+                    <i class="fas fa-user-circle"></i>
+                    <p>Item 3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4>Code:</h4>
+            <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F147d9ecc9c18c97e67d17f53a17dd3aa889fe067%2Fdocs%2Fexamples%2Fexamples.html%23L613-L631&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+          </section>
+
+          <h2 class="py-1">Confirmation Modal</h2>
+
+          <section class="example flex-column gap-1">
+            <div class="flex-row flex-center">
+              <!-- Confirmation Modal -->
+              <div class="modal-container">
+                <h2 class="modal-title">Modal Title</h2>
+
+                <div class="modal-options bordered">
+                  <div class="modal-option">
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item-1"
+                      value="item-1"
+                    />
+                    <label for="item-1">Item 1</label>
+                  </div>
+                  <div class="modal-option">
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item-2"
+                      value="item-2"
+                    />
+                    <label for="item-2">Item 2</label>
+                  </div>
+                  <div class="modal-option">
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item-3"
+                      value="item-3"
+                    />
+                    <label for="item-3">Item 3</label>
+                  </div>
+                  <div class="modal-option">
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item-4"
+                      value="item-4"
+                    />
+                    <label for="item-4">Item 4</label>
+                  </div>
+                  <div class="modal-option">
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item-5"
+                      value="item-5"
+                    />
+                    <label for="item-5">Item 5</label>
+                  </div>
+                </div>
+
+                <div class="modal-actions">
+                  <button class="btn btn-primary">Agree</button>
+                  <button class="btn btn-outline">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <h4>Code:</h4>
+            <code>
+              <script src="https://shivampandey0.github.io/embed-like-gist/embed.js?target=https%3A%2F%2Fgithub.com%2Fshivampandey0%2FMarvel-UI-Component-Library%2Fblob%2F147d9ecc9c18c97e67d17f53a17dd3aa889fe067%2Fdocs%2Fexamples%2Fexamples.html%23L633-L664&style=github&showBorder=on&showCopy=on"></script>
+            </code>
+          </section>
+
+          <hr class="my-1" />
+          <div class="bottom-nav">
+            <a href="./snackbar.html" class="btn"
+              ><i class="fas fa-chevron-left"></i> Snackbar</a
+            >
+            <a href="./slider.html" class="btn">
+              Range Slider<i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
