@@ -9,10 +9,7 @@
 You can use the <span style="color: #009688; font-weight: bold">MARVEL UI </span> library by adding our stylesheet to your website. To get started add the following `link` element in your `head` element of the HTML file.
 
 ```html
-<link rel="stylesheet" href="<link
-  rel="stylesheet"
-  href="https://marvel-ui.vercel.app/css/marvel-ui.css"
-/>"/>
+<link  rel="stylesheet"  href="https://marvel-ui.vercel.app/css/marvel-ui.css"/>
 ```
 
 Visit [docs](https://marvel-ui.vercel.app/docs/get-started.html) to learn more.
