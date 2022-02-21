@@ -1,0 +1,20 @@
+.radio {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: var(--size-4);
+  height: var(--size-4);
+  padding: 2px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  border-radius: var(--radius-round);
+}
+
+.radio:checked {
+  background-color: var(--primary);
+}
