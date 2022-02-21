@@ -1,0 +1,83 @@
+/* Modals */
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 0 var(--scale-1);
+  min-width: var(--size-80);
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.modal-title {
+  padding: var(--scale-1);
+  font-weight: var(--weight-medium);
+  font-size: calc(var(--scale-3) / 2);
+}
+
+.modal-info {
+  opacity: 0.8;
+  padding: 0 var(--scale-1);
+  min-height: var(--scale-3);
+  color: var(--black);
+}
+
+.modal-actions {
+  display: flex;
+  align-self: flex-end;
+  gap: var(--size-2);
+  margin: var(--size-2);
+}
+
+.modal-options {
+  margin: var(--size-2);
+  max-height: var(--size-40);
+  overflow-y: auto;
+}
+
+.modal-options.bordered {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-option {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--scale-1);
+  align-items: center;
+  padding: var(--size-2);
+}
+
+.modal-option i {
+  font-size: var(--scale-2);
+  color: var(--black);
+}
+
+.modal-option input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: var(--size-4);
+  height: var(--size-4);
+  padding: 2px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  border-radius: var(--radius-round);
+}
+
+.modal-option input[type="radio"]:checked {
+  background-color: var(--primary);
+}
+
+.modal-option:hover {
+  background-color: var(--primary-light);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
