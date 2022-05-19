@@ -1,46 +1,42 @@
 /* Headings */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
 .h1,
 .h2,
 .h3,
 .h4,
-.h5 {
+.h5,
+.h6 {
   line-height: 1.33;
-  font-weight: var(--weight-regular);
+  font-weight: var(--weight-bold);
 }
 
-.h1,
-h1 {
+.h1 {
   /* 3rem */
   font-size: var(--scale-3);
 }
 
-.h2,
-h2 {
+.h2 {
   /* 2rem */
   font-size: var(--scale-2);
 }
 
-.h3,
-h3 {
+.h3 {
   /* 1.5rem */
   font-size: calc(var(--scale-3) / 2);
 }
 
-.h4,
-h4 {
+.h4 {
   /* 1rem */
   font-size: var(--scale-1);
 }
 
-.h5,
-h5 {
+.h5 {
+  /* 0.5rem */
+  font-size: var(--scale-075);
+  line-height: 2;
+}
+
+.h6 {
   /* 0.5rem */
   font-size: var(--scale-05);
   line-height: 2;
@@ -48,7 +44,7 @@ h5 {
 
 /* Paragraph Text */
 
-.txt-xl{
+.txt-xl {
   font-size: var(--scale-3);
 }
 
@@ -83,20 +79,20 @@ h5 {
   text-decoration: line-through;
 }
 
-.txt-underline{
+.txt-underline {
   text-decoration: underline;
 }
 
 /* Text Alignments */
 
-.txt-center{
+.txt-center {
   text-align: center;
 }
 
-.txt-start{
+.txt-start {
   text-align: start;
 }
 
-.txt-end{
+.txt-end {
   text-align: end;
 }
